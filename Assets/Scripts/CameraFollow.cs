@@ -12,7 +12,7 @@ public class CameraFollow : MonoBehaviour
     public float speedFollow;
     void Start()
     {
-        Offset = transform.position;
+        Offset = transform.position - Target.position;
     }
     void LateUpdate()
     {
