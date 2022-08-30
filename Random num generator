@@ -1,0 +1,1 @@
+int randomNumber = UnityEngine.Random.Range(1, 11);  //Random number between 1 and 10
