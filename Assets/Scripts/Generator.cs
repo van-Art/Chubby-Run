@@ -19,10 +19,9 @@ public class Generator : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
 
-        for(int i =0; i < levelPrefab.Count; i++)
+        for(int i = 0; i < levelPrefab.Count; i++)
         {
             Transform point = Instantiate(levelPrefab[i], new Vector3(0, 0, i * 39.2f), transform.rotation).transform;
-            //Instantiate(levelPrefab[i], transform);
             currentLevel.Add(point);
             offset += 39.2f;
         }
@@ -48,6 +47,8 @@ public class Generator : MonoBehaviour
     public void Recycle(GameObject levels)
     {
         levels.transform.position = new Vector3(0, 0, offset);
+        levels.GetComponent<Level>().SpawnObs();
+        levels.GetComponent<Level>().SpawnEnemies();
         offset += 39.21f;
     }
 }
