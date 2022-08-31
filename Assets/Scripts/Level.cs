@@ -17,14 +17,15 @@ public class Level : MonoBehaviour
     int randPoint;
     void Start()
     {
-        //SpawnObs();
-        SpawnEnemies();
+        SpawnObs();
+        //SpawnEnemies();
     }
     public void SpawnObs()
     {
         if (CurrentObs != null)
             Destroy(CurrentObs);
         rand = Random.Range(0, Obstacles.Length);
+        Debug.Log("Random number " + rand);
         CurrentObs = Instantiate(Obstacles[rand], transform);
     }
     public void SpawnEnemies()

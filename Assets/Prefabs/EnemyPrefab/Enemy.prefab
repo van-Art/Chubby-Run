@@ -137,7 +137,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4361907596791401242}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4ebb3451a64c56a44b8672bc336bbf0f, type: 3}
   m_Name: 
@@ -145,4 +145,3 @@ MonoBehaviour:
   shootPoint: {fileID: 8685970559150826617}
   bullet: {fileID: 4361907596791401242, guid: bef7c32628bc6354eb44c5571cf36961, type: 3}
   shootTime: 0.5
-  shootSpeed: 900

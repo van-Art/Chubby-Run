@@ -48,7 +48,7 @@ public class Generator : MonoBehaviour
     {
         levels.transform.position = new Vector3(0, 0, offset);
         levels.GetComponent<Level>().SpawnObs();
-        levels.GetComponent<Level>().SpawnEnemies();
+        //levels.GetComponent<Level>().SpawnEnemies();
         offset += 39.21f;
     }
 }

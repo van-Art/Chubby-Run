@@ -747,7 +747,7 @@ MonoBehaviour:
   spwPoints: []
   Obstacles:
   - {fileID: 2823762458302060024, guid: c81a6077febc7404cabf2b6383a06674, type: 3}
-  - {fileID: 6762567391822691229, guid: 95f0e6fbdcb1be84c9085eca4bab8c33, type: 3}
+  - {fileID: 3479974578276618062, guid: 95f0e6fbdcb1be84c9085eca4bab8c33, type: 3}
   Enemies:
   - {fileID: 0}
 --- !u!1 &3907494491736577132
