@@ -3,7 +3,102 @@ guid: b3c526a1c98e3d14e82fec15df112ea8
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black
+    second: {fileID: 2100000, guid: 4a2c63b4219619846a3062d9121df6de, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black_holder
+    second: {fileID: 2100000, guid: 3b18ac8461c5833438bfe95efc3119b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black_rezina
+    second: {fileID: 2100000, guid: f45e2c1f6d908714e8d8d2100a5d5875, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chrome
+    second: {fileID: 2100000, guid: 72494bd3cd7444a4caa7d5edf0bf140e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Coffee
+    second: {fileID: 2100000, guid: 9dd2c70e1144f1f44a31b84a353bce64, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Coffee_dark
+    second: {fileID: 2100000, guid: 61b95f2de381c324da665f25cb909ca7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Coffee_light
+    second: {fileID: 2100000, guid: 6c5e937ac468e2041bb1d39f674aea10, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Grey
+    second: {fileID: 2100000, guid: fe6847128df0e3b4fa735b68eb8f346d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Knopka_green
+    second: {fileID: 2100000, guid: 8ae47f4b4963a404d8e6f77fb4c85329, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Kruzhka_2
+    second: {fileID: 2100000, guid: f170906e4d168cc44b944df8e626ac18, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Kruzka_1
+    second: {fileID: 2100000, guid: b7cdf7af73518d0448199e7ef6b534be, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal_dark
+    second: {fileID: 2100000, guid: f72140723a112b640a69381fc81ff63a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metalic_capuchinator
+    second: {fileID: 2100000, guid: 2f7e7c916ba063645b863fc345fd4796, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metall_holder
+    second: {fileID: 2100000, guid: 86977e827777e914b95478d83035bec1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metallic
+    second: {fileID: 2100000, guid: 5d748eacbab21ad4f909466be914c3f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Red
+    second: {fileID: 2100000, guid: 989bba4671c53cb4197ce09a9061e519, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Water
+    second: {fileID: 2100000, guid: ce0847e8ab72dc046871201b34a5aab4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: knopka_black
+    second: {fileID: 2100000, guid: 613b383250a967c4db580b944e3f2eb5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: a1c8a53f9b4e22c44b2f42ccc45cc1ac, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

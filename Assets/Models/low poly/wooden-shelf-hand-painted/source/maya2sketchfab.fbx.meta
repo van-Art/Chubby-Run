@@ -3,7 +3,12 @@ guid: 8e70ee4d31e4ac145bceb8875a18d7a8
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: monopoly-guy-madeira-chao
+    second: {fileID: 2800000, guid: 4c98d8ba86d6798479efa79ad3e43972, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

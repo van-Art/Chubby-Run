@@ -98,7 +98,7 @@ public class Movement : MonoBehaviour
         if (col.gameObject.tag == "ground")
         {
             InJump = true;
-            Debug.Log("isGround");
+
             anim.SetBool("jump", false);
         }
     }

@@ -12,6 +12,13 @@ TagManager:
   - cau
   - map
   - ramp
+  - exit
+  - spwcomp
+  - component
+  - refrigeratorObs
+  - gas
+  - sink
+  - cooler
   layers:
   - Default
   - TransparentFX
