@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 392772720615828934}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: wiggle top back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3433898163751099158}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: wiggler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7563990106694485814}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: wiggle back right_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,7 +104,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5480275764781699476}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: spine 1 (bot)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -136,7 +136,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2170278222614685598}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: spine control
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -170,7 +170,7 @@ GameObject:
   - component: {fileID: 3445664045907944363}
   - component: {fileID: 6291805219425793006}
   - component: {fileID: 2311410031413803331}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: eye left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -251,7 +251,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 400256374518323459}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: wiggle side left_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -282,7 +282,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 415595418848831336}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: wiggle top right_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -313,7 +313,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7039082686107919456}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: wiggle top back_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -344,7 +344,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5535355497875681723}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: wiggle back left_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -375,7 +375,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7084464572409477432}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: wiggle back left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -407,7 +407,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 730863079331752505}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: wiggle front left_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -438,7 +438,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4494362932670303598}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: wiggle front right_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -469,7 +469,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7660044514439091933}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: wiggler_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -500,7 +500,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6062579166248771746}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: wiggle front right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -532,7 +532,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4968533704778386918}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: spine 2 (mid)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -564,7 +564,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6859052743754824717}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: wiggle top left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -597,9 +597,10 @@ GameObject:
   m_Component:
   - component: {fileID: 8623394260831068621}
   - component: {fileID: 7921640238000373781}
-  m_Layer: 0
+  - component: {fileID: 7674182517560974935}
+  m_Layer: 3
   m_Name: body combined
-  m_TagString: Untagged
+  m_TagString: obs
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -689,6 +690,19 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.061440587, y: 2.7187524, z: 0.14747787}
     m_Extent: {x: 2.2215967, y: 2.7223477, z: 2.0015543}
   m_DirtyAABB: 0
+--- !u!65 &7674182517560974935
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3343652305612423037}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.8691077, y: 5.2877903, z: 7.1920123}
+  m_Center: {x: -1.78681, y: 0.09129052, z: -1.0600352}
 --- !u!1 &3615828470948742361
 GameObject:
   m_ObjectHideFlags: 0
@@ -698,7 +712,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4994765008188000300}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: wiggle front left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -730,7 +744,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2294650340385882853}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: shades sticking point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -762,7 +776,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 226457217245718905}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: wiggle top right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -794,7 +808,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3437653220004307892}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Armature
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -829,7 +843,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5480217293087434433}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: wiggle side left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -861,7 +875,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4600359627973609275}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: spine 3 (top)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -903,7 +917,7 @@ GameObject:
   - component: {fileID: 4745484139276114469}
   - component: {fileID: 5526076574645759071}
   - component: {fileID: 7377860251810292363}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: eye right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -984,7 +998,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2324808518282035148}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: eyebrows
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1016,7 +1030,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2995452886947090035}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: spine control_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1047,7 +1061,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4118316567173401874}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: wiggle top left_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1078,9 +1092,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5981952595701166890}
-  m_Layer: 0
+  - component: {fileID: 7842247988772253342}
+  m_Layer: 3
   m_Name: Broccoli
-  m_TagString: Untagged
+  m_TagString: obs
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1093,7 +1108,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6363580353722853776}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0.00000058114523}
-  m_LocalPosition: {x: 0, y: 0.05, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1105,6 +1120,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+--- !u!95 &7842247988772253342
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6363580353722853776}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 64a53b6038bcb65448f75cade16f4cb1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6998718331399841682
 GameObject:
   m_ObjectHideFlags: 0
@@ -1116,7 +1151,7 @@ GameObject:
   - component: {fileID: 7418419422430584890}
   - component: {fileID: 7206541288367037294}
   - component: {fileID: 3104192484754196556}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: shades
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1198,7 +1233,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2162008669899300526}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: eyebrows_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1229,7 +1264,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6470550409852508797}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: wiggle side right_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1260,7 +1295,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 896757097687704148}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: wiggle back right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1292,7 +1327,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5847267805603652491}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: wiggle side right
   m_TagString: Untagged
   m_Icon: {fileID: 0}

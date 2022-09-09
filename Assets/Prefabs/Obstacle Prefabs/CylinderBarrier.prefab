@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 1732912350010300068}
   - component: {fileID: 8519726596726109788}
   - component: {fileID: 3112218957688916042}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CylinderBarrier
-  m_TagString: Untagged
+  m_TagString: obs
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -2109,7 +2109,7 @@ GameObject:
   - component: {fileID: 5401875350925298337}
   m_Layer: 0
   m_Name: Coffee_machine
-  m_TagString: Untagged
+  m_TagString: coffemachine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -15,7 +15,8 @@ public class SpawnObs : MonoBehaviour
         for(int i = 0; i < Points.Length; i++)
         {
             randObs = Random.Range(0, obs.Length);
-            Instantiate(obs[randObs], Points[i]);
+            var obst = Instantiate(obs[randObs], Points[i]);
+            obst.transform.localPosition += Vector3.forward * Random.Range(-2f, 1.5f);
         }
     }
     void Update()

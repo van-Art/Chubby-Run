@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 7727261032309119136}
   - component: {fileID: 4972359793354911283}
   - component: {fileID: 3815529041509094578}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Barrier
-  m_TagString: Untagged
+  m_TagString: obs
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -9,8 +9,6 @@ TagManager:
   - wall
   - backmap
   - ground
-  - cau
-  - map
   - ramp
   - exit
   - spwcomp
@@ -19,14 +17,23 @@ TagManager:
   - gas
   - sink
   - cooler
+  - washingmachine
+  - barrier
+  - cone
+  - coffemachine
+  - cylinderbarrier
+  - tyre
+  - broccoli
+  - plant
+  - obs
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - obstacle
   - Water
   - UI
-  - 
+  - component
   - 
   - YuME_TileMap
   - 

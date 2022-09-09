@@ -93,7 +93,7 @@ public class Movement : MonoBehaviour
             InJump = false;
         }
     }
-    void OnCollisionEnter(Collision col)
+    private void OnCollisionEnter(UnityEngine.Collision col)
     {
         if (col.gameObject.tag == "ground")
         {
@@ -101,12 +101,16 @@ public class Movement : MonoBehaviour
 
             anim.SetBool("jump", false);
         }
+        if (col.gameObject.tag == "obs")
+        {
+ 
+            GameManager.instance.GameOver_Panel.SetActive(true);
+            Destroy(this.gameObject);
+        }
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "ramp")
-        {
-            rb.velocity = new Vector3(0, 3, 3);
-        }
+        if (other.gameObject.tag == "component")
+            Destroy(other.gameObject);
     }
 }
