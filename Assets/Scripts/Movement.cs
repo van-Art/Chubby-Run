@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public enum SIDE { Left, Mid, Right}
@@ -106,6 +107,14 @@ public class Movement : MonoBehaviour
  
             GameManager.instance.GameOver_Panel.SetActive(true);
             Destroy(this.gameObject);
+        }
+        if (col.gameObject.tag == "component")
+        {
+            Destroy(col.gameObject);
+        }
+        if(col.gameObject.tag == "exit")
+        {
+            SceneManager.LoadScene("Level_Selector");
         }
     }
     private void OnTriggerEnter(Collider other)

@@ -12,10 +12,6 @@ public class SpwComponent : MonoBehaviour
     {
         isSpawned = false;
     }
-    void Update()
-    {
-        
-    }
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Player")

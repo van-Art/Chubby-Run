@@ -4,29 +4,20 @@ using UnityEngine;
 
 public class SpawnObs : MonoBehaviour
 {
-    public Transform[] Points;
-
+    public Transform[] allPoints;
     public GameObject[] obs;
 
-    int randObs;
-    int randPoints;
+    int rand;
     void Start()
     {
-        for(int i = 0; i < Points.Length; i++)
+        for(int i = 0; i < allPoints.Length; i++)
         {
-            randObs = Random.Range(0, obs.Length);
-            var obst = Instantiate(obs[randObs], Points[i]);
-            obst.transform.localPosition += Vector3.forward * Random.Range(-2f, 1.5f);
+            rand = Random.Range(0, obs.Length);
+            Instantiate(obs[rand], allPoints[i]);
         }
     }
     void Update()
     {
         
-    }
-    public void Instante()
-    {
-        
-        randPoints = Random.Range(0, Points.Length);
-        Instantiate(obs[randObs], Points[randPoints]);
     }
 }
