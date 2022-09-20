@@ -7,25 +7,19 @@ TagManager:
   - coin
   - player
   - wall
-  - backmap
   - ground
   - ramp
   - exit
   - spwcomp
   - component
-  - refrigeratorObs
-  - gas
-  - sink
-  - cooler
-  - washingmachine
-  - barrier
-  - cone
-  - coffemachine
-  - cylinderbarrier
-  - tyre
-  - broccoli
-  - plant
   - obs
+  - pausebutton
+  - pausescreen
+  - collectable
+  - onion
+  - cheese
+  - lettuce
+  - patty
   layers:
   - Default
   - TransparentFX

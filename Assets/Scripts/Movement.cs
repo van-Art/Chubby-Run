@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public enum SIDE { Left, Mid, Right}
 public class Movement : MonoBehaviour
 {
+    public static Movement mInstance;
     Rigidbody rb;
     Animator anim;
 
@@ -19,6 +20,13 @@ public class Movement : MonoBehaviour
     public bool swipeDown;
     public bool InJump;
     public bool InRoll;
+    public bool isTaken;
+    public bool isTakenTomato;
+    public bool isTakenMorol;
+    public bool isTakeOnion;
+    public bool isDead;
+    public bool isDone;
+    public bool isFinished;
 
     [Header("Player Settings")]
     public float speed = 0;
@@ -32,6 +40,8 @@ public class Movement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
+
+        mInstance = this;
     }
     void Update()
     {
@@ -94,7 +104,7 @@ public class Movement : MonoBehaviour
             InJump = false;
         }
     }
-    private void OnCollisionEnter(UnityEngine.Collision col)
+    private void OnCollisionEnter(Collision col)
     {
         if (col.gameObject.tag == "ground")
         {
@@ -104,22 +114,34 @@ public class Movement : MonoBehaviour
         }
         if (col.gameObject.tag == "obs")
         {
+            isDead = true;
  
             GameManager.instance.GameOver_Panel.SetActive(true);
-            Destroy(this.gameObject);
+            GameManager.instance.CollectableImg.SetActive(false);
+            GameManager.instance.pauseButton.SetActive(false);
+            GameManager.instance.resumeButton.SetActive(false);
+
+            //Destroy(this.gameObject);
+            this.gameObject.SetActive(false);
         }
         if (col.gameObject.tag == "component")
         {
+            isTaken = true;
             Destroy(col.gameObject);
+            GameManager.instance.addComponentCount();
+        }
+        if(col.gameObject.tag == "lettuce")
+        {
+            isTakenMorol = true;
+            Destroy(col.gameObject);
+            GameManager.instance.addLettuceCount();
         }
         if(col.gameObject.tag == "exit")
         {
-            SceneManager.LoadScene("Level_Selector");
+            //SceneManager.LoadScene("Level_Selector");
+            isDone = true;
+            GameManager.instance.Win_Panel.SetActive(true);
+            Time.timeScale = 0;
         }
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "component")
-            Destroy(other.gameObject);
     }
 }
