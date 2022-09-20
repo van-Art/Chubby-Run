@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 49765425786318315}
   - component: {fileID: 6040327635724653942}
   - component: {fileID: 2287044444088265287}
-  - component: {fileID: 5716836563711586399}
-  m_Layer: 0
+  - component: {fileID: 2071839321}
+  m_Layer: 9
   m_Name: lettuce
   m_TagString: lettuce
   m_Icon: {fileID: 0}
@@ -26,14 +26,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4716854790673431520}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+  m_LocalRotation: {x: -0.7069834, y: 0, z: 0, w: 0.7072302}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 100, y: 99.999985, z: 18.712313}
+  m_LocalScale: {x: 21.628174, y: 21.62817, z: 4.047131}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: 0}
 --- !u!33 &6040327635724653942
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -84,7 +84,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &5716836563711586399
+--- !u!65 &2071839321
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,8 +92,8 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4716854790673431520}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.03427734, y: 0.031789023, z: 0.024555158}
-  m_Center: {x: -0.0007363688, y: -0.00042652097, z: -0.002732262}
+  m_Size: {x: 0.03427734, y: 0.031789023, z: 0.057137072}
+  m_Center: {x: -0.0007363683, y: -0.00042652068, z: -0.0017662651}

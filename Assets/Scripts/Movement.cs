@@ -8,6 +8,8 @@ public enum SIDE { Left, Mid, Right}
 public class Movement : MonoBehaviour
 {
     public static Movement mInstance;
+
+    public Transform stackParent;
     Rigidbody rb;
     Animator anim;
 
@@ -114,27 +116,31 @@ public class Movement : MonoBehaviour
         }
         if (col.gameObject.tag == "obs")
         {
-            isDead = true;
+            
  
-            GameManager.instance.GameOver_Panel.SetActive(true);
-            GameManager.instance.CollectableImg.SetActive(false);
-            GameManager.instance.pauseButton.SetActive(false);
-            GameManager.instance.resumeButton.SetActive(false);
+            
+            Destroy(stackParent.GetChild(0).gameObject);
+            if (stackParent.childCount == 0 && isDead == true)
+            {
+                Destroy(this.gameObject);
+                GameManager.instance.GameOver_Panel.SetActive(true);
+                GameManager.instance.CollectableImg.SetActive(false);
+                GameManager.instance.pauseButton.SetActive(false);
+                GameManager.instance.resumeButton.SetActive(false);
+            }
 
-            //Destroy(this.gameObject);
             this.gameObject.SetActive(false);
         }
         if (col.gameObject.tag == "component")
         {
             isTaken = true;
-            Destroy(col.gameObject);
+            //Destroy(col.gameObject);
+            col.transform.parent = stackParent;
+            col.transform.localScale = new Vector3(29, 29, 6);
+            col.gameObject.GetComponent<Component_Movement>().enabled = false;
+            col.gameObject.GetComponent<CoinRotate>().enabled = false;
+            Destroy(col.gameObject.GetComponent<Rigidbody>());
             GameManager.instance.addComponentCount();
-        }
-        if(col.gameObject.tag == "lettuce")
-        {
-            isTakenMorol = true;
-            Destroy(col.gameObject);
-            GameManager.instance.addLettuceCount();
         }
         if(col.gameObject.tag == "exit")
         {
@@ -142,6 +148,19 @@ public class Movement : MonoBehaviour
             isDone = true;
             GameManager.instance.Win_Panel.SetActive(true);
             Time.timeScale = 0;
+        }
+    }
+    void OnTriggerEnter(Collider col)
+    {
+        if (col.gameObject.tag == "lettuce")
+        {
+            isTakenMorol = true;
+            //Destroy(col.gameObject);
+            col.transform.parent = stackParent;
+            col.GetComponent<CoinRotate>().enabled = false;
+            col.GetComponent<BoxCollider>().enabled = false;
+            GameManager.instance.addLettuceCount();
+            
         }
     }
 }

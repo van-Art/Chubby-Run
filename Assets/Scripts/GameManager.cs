@@ -120,9 +120,8 @@ public class GameManager : MonoBehaviour
 
         if(Movement.mInstance.isTaken == true)
         {
-            compScore += 1;
+            compScore = compScore + 1;
             ComponentText.text = "" + compScore;
-            Debug.Log("compScore" + compScore);
         }
     }
     public void addLettuceCount()
@@ -132,7 +131,6 @@ public class GameManager : MonoBehaviour
         {
             morolScore += 1;
             MorolText.text = "" + morolScore;
-            Debug.Log("morolScore" + morolScore);
         }
     }
 }
