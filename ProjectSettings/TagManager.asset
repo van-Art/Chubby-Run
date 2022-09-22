@@ -20,6 +20,7 @@ TagManager:
   - cheese
   - lettuce
   - patty
+  - tomato
   layers:
   - Default
   - TransparentFX

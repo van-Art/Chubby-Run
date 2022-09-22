@@ -1886,7 +1886,6 @@ MonoBehaviour:
   Background:
   - {fileID: 89455153}
   - {fileID: 1247565011}
-  index: 0
 --- !u!1 &655462774
 GameObject:
   m_ObjectHideFlags: 0
@@ -2927,7 +2926,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 648327020}
         m_TargetAssemblyTypeName: LevelLoader, Assembly-CSharp
-        m_MethodName: BackButton
+        m_MethodName: BackToMenuButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

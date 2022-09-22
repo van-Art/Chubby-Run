@@ -32,7 +32,6 @@ public class Movement : MonoBehaviour
 
     [Header("Player Settings")]
     public float speed = 0;
-    public float dodgeSpeed;
     public float jumpForce;
     public float xValue;
 
@@ -116,37 +115,40 @@ public class Movement : MonoBehaviour
         }
         if (col.gameObject.tag == "obs")
         {
-            
- 
-            
-            Destroy(stackParent.GetChild(0).gameObject);
-            if (stackParent.childCount == 0 && isDead == true)
+            isDead = true;
+            //Destroy(stackParent.GetChild(0).gameObject);
+            //Debug.Log("Stack 0 obj:" + stackParent.GetChild(0).gameObject);
+            if (stackParent.childCount < 0 || isDead == true)
             {
-                Destroy(this.gameObject);
+                //Destroy(this.gameObject);
                 GameManager.instance.GameOver_Panel.SetActive(true);
                 GameManager.instance.CollectableImg.SetActive(false);
                 GameManager.instance.pauseButton.SetActive(false);
                 GameManager.instance.resumeButton.SetActive(false);
+
+                this.gameObject.SetActive(false);
             }
 
-            this.gameObject.SetActive(false);
+            //this.gameObject.SetActive(false);
         }
         if (col.gameObject.tag == "component")
         {
             isTaken = true;
             //Destroy(col.gameObject);
             col.transform.parent = stackParent;
-            col.transform.localScale = new Vector3(29, 29, 6);
+            col.transform.localScale = new Vector3(24, 24, 7.3f);
+            col.transform.GetChild(0).gameObject.SetActive(false);
             col.gameObject.GetComponent<Component_Movement>().enabled = false;
             col.gameObject.GetComponent<CoinRotate>().enabled = false;
+            col.gameObject.GetComponent<BoxCollider>().enabled = false;
             Destroy(col.gameObject.GetComponent<Rigidbody>());
             GameManager.instance.addComponentCount();
         }
         if(col.gameObject.tag == "exit")
         {
-            //SceneManager.LoadScene("Level_Selector");
             isDone = true;
             GameManager.instance.Win_Panel.SetActive(true);
+            GameManager.instance.CollectableImg.SetActive(false);
             Time.timeScale = 0;
         }
     }
@@ -155,12 +157,26 @@ public class Movement : MonoBehaviour
         if (col.gameObject.tag == "lettuce")
         {
             isTakenMorol = true;
-            //Destroy(col.gameObject);
             col.transform.parent = stackParent;
+            col.transform.localScale = new Vector3(20, 20, 6);
             col.GetComponent<CoinRotate>().enabled = false;
             col.GetComponent<BoxCollider>().enabled = false;
             GameManager.instance.addLettuceCount();
-            
+        }
+        if(col.gameObject.tag == "onion")
+        {
+            isTakeOnion = true;
+            col.transform.parent = stackParent;
+            col.transform.localScale = new Vector3(26, 26, 2.7f);
+            col.GetComponent<BoxCollider>().enabled = false;
+            col.GetComponent<CoinRotate>().enabled = false;
+            GameManager.instance.addOnionCount();
+        }
+        if (col.gameObject.tag == "tomato")
+        {
+            isTakenTomato = true;
+            col.transform.parent = stackParent;
+            GameManager.instance.addTomatoCount();
         }
     }
 }
