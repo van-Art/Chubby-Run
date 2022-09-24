@@ -50,17 +50,6 @@ public class Movement : MonoBehaviour
     }
     void MoveControl()
     {
-        #region Moving
-        //if ((Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A)) && row > -1)
-        //{
-        //    row--;
-        //}
-
-        //if ((Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D)) && row < 1)
-        //{
-        //    row++;
-        //}
-        #endregion
         swipeLeft = Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow);
         swipeRight = Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow);
         swipeUp = Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow);
@@ -105,6 +94,7 @@ public class Movement : MonoBehaviour
             InJump = false;
         }
     }
+    GameObject hitobject;
     private void OnCollisionEnter(Collision col)
     {
         if (col.gameObject.tag == "ground")
@@ -116,25 +106,22 @@ public class Movement : MonoBehaviour
         if (col.gameObject.tag == "obs")
         {
             isDead = true;
-            //Destroy(stackParent.GetChild(0).gameObject);
-            //Debug.Log("Stack 0 obj:" + stackParent.GetChild(0).gameObject);
-            if (stackParent.childCount < 0 || isDead == true)
+            if (stackParent.childCount > 5)
+                TakeDamage(5);
+            else
             {
-                //Destroy(this.gameObject);
+                Destroy(gameObject);
                 GameManager.instance.GameOver_Panel.SetActive(true);
                 GameManager.instance.CollectableImg.SetActive(false);
-                GameManager.instance.pauseButton.SetActive(false);
-                GameManager.instance.resumeButton.SetActive(false);
-
-                this.gameObject.SetActive(false);
+                Destroy(GameManager.instance.pauseButton);
+                Destroy(GameManager.instance.resumeButton);
             }
-
-            //this.gameObject.SetActive(false);
+            col.gameObject.GetComponent<Collider>().isTrigger = true;
         }
-        if (col.gameObject.tag == "component")
+        if (col.gameObject.tag == "patty")
         {
             isTaken = true;
-            //Destroy(col.gameObject);
+
             col.transform.parent = stackParent;
             col.transform.localScale = new Vector3(24, 24, 7.3f);
             col.transform.GetChild(0).gameObject.SetActive(false);
@@ -149,16 +136,45 @@ public class Movement : MonoBehaviour
             isDone = true;
             GameManager.instance.Win_Panel.SetActive(true);
             GameManager.instance.CollectableImg.SetActive(false);
+            Destroy(GameManager.instance.pauseButton);
+            Destroy(GameManager.instance.resumeButton);
             Time.timeScale = 0;
         }
     }
+    void TakeDamage(int value)
+    {
+        for (int i = 0; i < value; i++)
+        {
+            if(stackParent.GetChild(0).gameObject.tag == "lettuce")
+            {
+                GameManager.instance.morolScore--;
+            }
+            if (stackParent.GetChild(0).gameObject.tag == "onion")
+            {
+                GameManager.instance.onionScore--;
+            }
+            if (stackParent.GetChild(0).gameObject.tag == "tomato")
+            {
+                GameManager.instance.tomatoScore--;
+            }
+            if (stackParent.GetChild(0).gameObject.tag == "patty")
+            {
+                GameManager.instance.pattScore--;
+            }
+            stackParent.GetChild(0).parent = null;
+        }
+    }
+    //void TurnOnCollider()
+    //{
+    //    hitobject.GetComponent<Collider>().isTrigger = false;
+    //}
     void OnTriggerEnter(Collider col)
     {
         if (col.gameObject.tag == "lettuce")
         {
             isTakenMorol = true;
             col.transform.parent = stackParent;
-            col.transform.localScale = new Vector3(20, 20, 6);
+            col.transform.localScale = new Vector3(18, 18, 6);
             col.GetComponent<CoinRotate>().enabled = false;
             col.GetComponent<BoxCollider>().enabled = false;
             GameManager.instance.addLettuceCount();
@@ -176,7 +192,12 @@ public class Movement : MonoBehaviour
         {
             isTakenTomato = true;
             col.transform.parent = stackParent;
+            col.transform.localScale = new Vector3(.8f, .8f, .5f);
+            col.transform.Rotate(0, 0, 0);
+            col.GetComponent<BoxCollider>().enabled = false;
+            col.GetComponent<CoinRotate>().enabled = false;
             GameManager.instance.addTomatoCount();
+
         }
     }
 }

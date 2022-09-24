@@ -21,6 +21,7 @@ TagManager:
   - lettuce
   - patty
   - tomato
+  - cucumber
   layers:
   - Default
   - TransparentFX

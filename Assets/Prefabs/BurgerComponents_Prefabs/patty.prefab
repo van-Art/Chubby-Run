@@ -62,7 +62,7 @@ GameObject:
   - component: {fileID: 1746443045}
   m_Layer: 0
   m_Name: patty
-  m_TagString: component
+  m_TagString: patty
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

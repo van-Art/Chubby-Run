@@ -6,6 +6,7 @@ public class Stack_system : MonoBehaviour
 {
     public float itemsize;
     public Transform top;
+
     void Start()
     {
         
@@ -28,5 +29,9 @@ public class Stack_system : MonoBehaviour
             pos.x = 0;
             child.localPosition = Vector3.Lerp(child.localPosition, pos, Time.deltaTime * 10);
         }
+        //for(int i = 0; i < 5; i++)
+        //{
+        //    Destroy(transform.GetChild(0).gameObject);
+        //}
     }
 }

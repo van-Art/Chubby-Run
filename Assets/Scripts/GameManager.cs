@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     public GameObject resumeButton;
     [Header("Script")]
     public SpawnObs SpwObjs;
+    public LevelScript lvlScrp;
     [Header("UI: Score")]
     public int pattScore = 0;
     public int tomatoScore = 0;
@@ -56,20 +57,20 @@ public class GameManager : MonoBehaviour
         SpwObjs.enabled = GameObject.Find("SpawnObjects").GetComponent<SpawnObs>();
         SpwObjs.enabled = false;
 
+        lvlScrp = GetComponent<LevelScript>();
+
         GameIsPaused = false;
 
-        PattyText.text = "0";
-        MorolText.text = "0";
-        OnionText.text = "0";
-        TomatoText.text = "0";
+        PattyText.text = pattScore.ToString();
+        MorolText.text = morolScore.ToString();
+        OnionText.text = onionScore.ToString();
+        TomatoText.text = tomatoScore.ToString();
 
         //Collectable Objects Text equal Start text
-        PattyCollectableText.text = PattyText.text;
-        MorolCollectableText.text = MorolText.text;
-        TomatoCollectableText.text = TomatoText.text;
-        OnionCollectableText.text = OnionText.text;
-
-        MorolCollectableText.text = PlayerPrefs.GetInt("MorolHighScore", 0).ToString();
+        PattyCollectableText.text = pattScore.ToString();
+        MorolCollectableText.text = morolScore.ToString();
+        TomatoCollectableText.text = tomatoScore.ToString();
+        OnionCollectableText.text = onionScore.ToString();
 
         Start_Panel.SetActive(true);
         GameOver_Panel.SetActive(false);
@@ -80,27 +81,31 @@ public class GameManager : MonoBehaviour
     }
     void Update()
     {
-        if(Movement.mInstance.isDone == true)
+        PattyText.text = pattScore.ToString();
+        MorolText.text = morolScore.ToString();
+        OnionText.text = onionScore.ToString();
+        TomatoText.text = tomatoScore.ToString();
+
+        PattyCollectableText.text = pattScore.ToString();
+        MorolCollectableText.text = morolScore.ToString();
+        TomatoCollectableText.text = tomatoScore.ToString();
+        OnionCollectableText.text = onionScore.ToString();
+
+        if (Movement.mInstance.isDone == true)
         {
             //Win panel text equal to start panel text
-            lettuceText.text = MorolText.text;
-            oniText.text = OnionText.text;
-            tomatText.text = TomatoText.text;
-            pattyText.text = PattyText.text;
+            lettuceText.text = morolScore.ToString();
+            oniText.text = onionScore.ToString();
+            tomatText.text = tomatoScore.ToString();
+            pattyText.text = pattScore.ToString();
         }
         if(Movement.mInstance.isDead == true)
         {
             //Game over panel text equal to start panel
-            overLettuceText.text = MorolText.text;
-            overOniText.text = OnionText.text;
-            overPattyText.text = PattyText.text;
-            overTomatText.text = TomatoText.text;
-        }
-        //playerprefs save collected count
-        if(morolScore > PlayerPrefs.GetInt("MorolHighScore", 0))
-        {
-            PlayerPrefs.SetInt("MorolHighScore", morolScore);
-            MorolCollectableText.text = PlayerPrefs.GetInt("MorolHighScore").ToString();
+            overLettuceText.text = morolScore.ToString();
+            overOniText.text = onionScore.ToString();
+            overPattyText.text = pattScore.ToString();
+            overTomatText.text = tomatoScore.ToString();
         }
         if (Input.GetKeyDown(KeyCode.Return))
         {
@@ -139,6 +144,7 @@ public class GameManager : MonoBehaviour
     public void MenuButton()
     {
         SceneManager.LoadScene("Level_Selector");
+        lvlScrp.PassTheLevel();
     }
     public void RetryGame()
     {
@@ -148,12 +154,14 @@ public class GameManager : MonoBehaviour
     {
         pauseButton.SetActive(false);
         resumeButton.SetActive(true);
+        CollectableImg.SetActive(false);
         GameIsPaused = true;
     }
     public void Resume()
     {
         pauseButton.SetActive(true);
         resumeButton.SetActive(false);
+        CollectableImg.SetActive(true);
         GameIsPaused = false;
     }
     public void addComponentCount()
@@ -195,7 +203,7 @@ public class GameManager : MonoBehaviour
         {
             tomatoScore += 1;
             TomatoText.text = "" + tomatoScore;
-            TomatoCollectableText.text = tomatText.text;
+            TomatoCollectableText.text = TomatoText.text;
         }
     }
 }

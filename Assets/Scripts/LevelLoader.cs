@@ -11,6 +11,7 @@ public class LevelLoader : MonoBehaviour
 
     public GameObject MainPage;
     public GameObject SettingsPage;
+    public GameObject Shop;
 
     void Update()
     {
@@ -26,11 +27,17 @@ public class LevelLoader : MonoBehaviour
     {
         MainPage.SetActive(true);
         SettingsPage.SetActive(false);
+        Shop.SetActive(false);
     }
     public void LoadNextLevel()
     {
         //StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+    public void ShopButton()
+    {
+        MainPage.SetActive(false);
+        Shop.SetActive(true);
     }
     public void BackToMenuButton()
     {

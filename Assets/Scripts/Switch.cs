@@ -17,11 +17,21 @@ public class Switch : MonoBehaviour
         {
             Background[0].gameObject.SetActive(true);
             Background[1].gameObject.SetActive(false);
+            Background[2].gameObject.SetActive(false);
         }
         if (index == 1)
         {
             Background[0].gameObject.SetActive(false);
             Background[1].gameObject.SetActive(true);
+            Background[2].gameObject.SetActive(false);
+
+        }
+        if (index == 2)
+        {
+            Background[0].gameObject.SetActive(false);
+            Background[1].gameObject.SetActive(false);
+            Background[2].gameObject.SetActive(true);
+
         }
     }
     public void Next()
