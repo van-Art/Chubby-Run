@@ -16,8 +16,4 @@ public class SpawnObs : MonoBehaviour
             Instantiate(obs[rand], allPoints[i]);
         }
     }
-    void Update()
-    {
-        
-    }
 }

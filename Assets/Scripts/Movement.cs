@@ -23,6 +23,8 @@ public class Movement : MonoBehaviour
     public bool InJump;
     public bool InRoll;
     public bool isTaken;
+    public bool isTakenCheese;
+    public bool isTakenCucumber;
     public bool isTakenTomato;
     public bool isTakenMorol;
     public bool isTakeOnion;
@@ -94,7 +96,6 @@ public class Movement : MonoBehaviour
             InJump = false;
         }
     }
-    GameObject hitobject;
     private void OnCollisionEnter(Collision col)
     {
         if (col.gameObject.tag == "ground")
@@ -134,6 +135,7 @@ public class Movement : MonoBehaviour
         if(col.gameObject.tag == "exit")
         {
             isDone = true;
+            //SceneManager.LoadScene("Level_Selector");
             GameManager.instance.Win_Panel.SetActive(true);
             GameManager.instance.CollectableImg.SetActive(false);
             Destroy(GameManager.instance.pauseButton);
@@ -160,6 +162,14 @@ public class Movement : MonoBehaviour
             if (stackParent.GetChild(0).gameObject.tag == "patty")
             {
                 GameManager.instance.pattScore--;
+            }
+            if(stackParent.GetChild(0).gameObject.tag == "cheese")
+            {
+                GameManager.instance.cheeseScore--;
+            }
+            if(stackParent.GetChild(0).gameObject.tag == "cucumber")
+            {
+                GameManager.instance.cucumberScore--;
             }
             stackParent.GetChild(0).parent = null;
         }
@@ -192,12 +202,30 @@ public class Movement : MonoBehaviour
         {
             isTakenTomato = true;
             col.transform.parent = stackParent;
-            col.transform.localScale = new Vector3(.8f, .8f, .5f);
+            col.transform.localScale = new Vector3(.7f, .7f, .2f);
             col.transform.Rotate(0, 0, 0);
             col.GetComponent<BoxCollider>().enabled = false;
             col.GetComponent<CoinRotate>().enabled = false;
             GameManager.instance.addTomatoCount();
-
+        }
+        if(col.gameObject.tag == "cheese")
+        {
+            isTakenCheese = true;
+            col.transform.parent = stackParent;
+            col.transform.localScale = new Vector3(.5f, .5f, .5f);
+            col.GetComponent<Collider>().enabled = false;
+            col.GetComponent<CoinRotate>().enabled = false;
+            //GameManager.instance.addCheeseCount();
+        }
+        if(col.gameObject.tag == "cucumber")
+        {
+            isTakenCucumber = true;
+            col.transform.parent = stackParent;
+            col.transform.localScale = new Vector3(.7f, .7f, .2f);
+            col.transform.Rotate(0, 0, 0);
+            col.GetComponent<BoxCollider>().enabled = false;
+            col.GetComponent<CoinRotate>().enabled = false;
+            //GameManager.instance.addCucumberCount();
         }
     }
 }

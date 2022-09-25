@@ -24,26 +24,36 @@ public class GameManager : MonoBehaviour
     public int tomatoScore = 0;
     public int morolScore = 0;
     public int onionScore = 0;
+    public int cheeseScore = 0;
+    public int cucumberScore = 0;
     [Header("UI: CollectablesText")]
     public TMP_Text PattyCollectableText;
     public TMP_Text TomatoCollectableText;
     public TMP_Text MorolCollectableText;
     public TMP_Text OnionCollectableText;
+    //public TMP_Text CheeseCollectableText;
+    //public TMP_Text CucumberCollectableText;
     [Header("UI: Start Panel")]
     public TMP_Text PattyText;
     public TMP_Text TomatoText;
     public TMP_Text MorolText;
     public TMP_Text OnionText;
+    //public TMP_Text CheeseText;
+    //public TMP_Text CucumberText;
     [Header("UI: Win Panel")]
     public TMP_Text lettuceText;
     public TMP_Text oniText;
     public TMP_Text pattyText;
     public TMP_Text tomatText;
+    //public TMP_Text cheText;
+    //public TMP_Text cucText;
     [Header("UI: GameOver Panel")]
     public TMP_Text overLettuceText;
     public TMP_Text overOniText;
     public TMP_Text overPattyText;
     public TMP_Text overTomatText;
+    //public TMP_Text overCheeseText;
+    //public TMP_Text overCucumberText;
     [Header("Booleans")]
     public bool GameIsPaused;
 
@@ -65,12 +75,15 @@ public class GameManager : MonoBehaviour
         MorolText.text = morolScore.ToString();
         OnionText.text = onionScore.ToString();
         TomatoText.text = tomatoScore.ToString();
+        //CheeseText.text = cheeseScore.ToString();
+        //CucumberText.text = cucumberScore.ToString();
 
-        //Collectable Objects Text equal Start text
         PattyCollectableText.text = pattScore.ToString();
         MorolCollectableText.text = morolScore.ToString();
         TomatoCollectableText.text = tomatoScore.ToString();
         OnionCollectableText.text = onionScore.ToString();
+        //CheeseCollectableText.text = cheeseScore.ToString();
+        //CucumberCollectableText.text = cucumberScore.ToString();
 
         Start_Panel.SetActive(true);
         GameOver_Panel.SetActive(false);
@@ -85,11 +98,15 @@ public class GameManager : MonoBehaviour
         MorolText.text = morolScore.ToString();
         OnionText.text = onionScore.ToString();
         TomatoText.text = tomatoScore.ToString();
+        //CheeseText.text = cheeseScore.ToString();
+        //CucumberText.text = cucumberScore.ToString();
 
         PattyCollectableText.text = pattScore.ToString();
         MorolCollectableText.text = morolScore.ToString();
         TomatoCollectableText.text = tomatoScore.ToString();
         OnionCollectableText.text = onionScore.ToString();
+        //CheeseCollectableText.text = cheeseScore.ToString();
+        //CucumberCollectableText.text = cucumberScore.ToString();
 
         if (Movement.mInstance.isDone == true)
         {
@@ -98,14 +115,18 @@ public class GameManager : MonoBehaviour
             oniText.text = onionScore.ToString();
             tomatText.text = tomatoScore.ToString();
             pattyText.text = pattScore.ToString();
+            //cheText.text = cheeseScore.ToString();
+            //cucText.text = cucumberScore.ToString();
         }
-        if(Movement.mInstance.isDead == true)
+        if (Movement.mInstance.isDead == true)
         {
             //Game over panel text equal to start panel
             overLettuceText.text = morolScore.ToString();
             overOniText.text = onionScore.ToString();
             overPattyText.text = pattScore.ToString();
             overTomatText.text = tomatoScore.ToString();
+            //overCheeseText.text = cheeseScore.ToString();
+            //overCucumberText.text = cucumberScore.ToString();
         }
         if (Input.GetKeyDown(KeyCode.Return))
         {
@@ -206,4 +227,24 @@ public class GameManager : MonoBehaviour
             TomatoCollectableText.text = TomatoText.text;
         }
     }
+    //public void addCheeseCount()
+    //{
+    //    CheeseText.text = "" + cheeseScore;
+    //    if(Movement.mInstance.isTakenCheese == true)
+    //    {
+    //        cheeseScore += 1;
+    //        CheeseText.text = "" + cheeseScore;
+    //        CheeseCollectableText.text = CheeseText.text;
+    //    }
+    //}
+    //public void addCucumberCount()
+    //{
+    //    CucumberText.text = "" + cucumberScore;
+    //    if(Movement.mInstance.isTakenCucumber == true)
+    //    {
+    //        cucumberScore += 1;
+    //        CucumberText.text = "" + cucumberScore;
+    //        CucumberCollectableText.text = CucumberText.text;
+    //    }
+    //}
 }
