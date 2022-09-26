@@ -5,19 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class LevelLoader : MonoBehaviour
 {
-    public Animator Transition;
-
-    public float transitionTime = 1f;
+    public LevelManager lvlManagerScript;
 
     public GameObject MainPage;
     public GameObject SettingsPage;
     public GameObject Shop;
 
-    void Update()
-    {
-        //if (Input.GetMouseButtonDown(0))
-        //    LoadNextLevel();
-    }
     public void SettingsButton()
     {
         MainPage.SetActive(false);
@@ -31,8 +24,11 @@ public class LevelLoader : MonoBehaviour
     }
     public void LoadNextLevel()
     {
-        //StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+    public void LaodSecondLevel()
+    {
+        SceneManager.LoadScene("Level2");
     }
     public void ShopButton()
     {
@@ -43,10 +39,8 @@ public class LevelLoader : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
-    IEnumerator LoadLevel(int levelIndex)
+    public void ResetButton()
     {
-        Transition.SetTrigger("Start");
-        yield return new WaitForSeconds(transitionTime);
-        SceneManager.LoadScene(levelIndex);
+        LevelManager.lvlInstance.ResetButton();
     }
 }

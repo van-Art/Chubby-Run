@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1851740395179011639}
   - component: {fileID: 1851740395179011638}
   - component: {fileID: 1851740395179011633}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Oven1
   m_TagString: obs
   m_Icon: {fileID: 0}

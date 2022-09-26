@@ -5,9 +5,15 @@ using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour
 {
+    public static LevelManager lvlInstance;
     int levelsUnlocked;
 
     public Button[] levelButtons;
+
+    void Awake()
+    {
+        lvlInstance = this;    
+    }
     void Start()
     {
         levelsUnlocked = PlayerPrefs.GetInt("levelsUnlocked", 1);
@@ -30,5 +36,11 @@ public class LevelManager : MonoBehaviour
             PlayerPrefs.SetInt("levelsUnlocked", 1);
             Debug.Log("reset");
         }
+    }
+    public void ResetButton()
+    {
+        levelsUnlocked = 1;
+        PlayerPrefs.SetInt("levelsUnlocked", 1);
+        Debug.Log("reset");
     }
 }

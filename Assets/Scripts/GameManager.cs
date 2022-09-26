@@ -108,7 +108,7 @@ public class GameManager : MonoBehaviour
         //CheeseCollectableText.text = cheeseScore.ToString();
         //CucumberCollectableText.text = cucumberScore.ToString();
 
-        if (Movement.mInstance.isDone == true)
+        if (player.activeSelf && Movement.mInstance.isDone == true)
         {
             //Win panel text equal to start panel text
             lettuceText.text = morolScore.ToString();
@@ -118,7 +118,7 @@ public class GameManager : MonoBehaviour
             //cheText.text = cheeseScore.ToString();
             //cucText.text = cucumberScore.ToString();
         }
-        if (Movement.mInstance.isDead == true)
+        if (player.activeSelf && Movement.mInstance.isDead == true)
         {
             //Game over panel text equal to start panel
             overLettuceText.text = morolScore.ToString();
@@ -169,7 +169,8 @@ public class GameManager : MonoBehaviour
     }
     public void RetryGame()
     {
-        SceneManager.LoadScene("Level1");
+        //SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     public void PauseGame()
     {

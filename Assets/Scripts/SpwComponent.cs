@@ -5,9 +5,11 @@ using UnityEngine;
 public class SpwComponent : MonoBehaviour
 {
     bool isSpawned = false;
-    public Transform spwPoint;
+    [SerializeField]
+    Transform spwPoint1;
 
-    public GameObject CompObj;
+    [SerializeField]
+    GameObject CompObj1;
     void Start()
     {
         isSpawned = false;
@@ -18,10 +20,9 @@ public class SpwComponent : MonoBehaviour
         {
             if (isSpawned == false)
             {
-                Instantiate(CompObj, spwPoint);
-                Debug.Log("Instantiated");
-                Debug.Log(transform.position);
+                Instantiate(CompObj1, spwPoint1);
                 isSpawned = true;
+                Debug.Log("Instanted");
             }
         }
     }

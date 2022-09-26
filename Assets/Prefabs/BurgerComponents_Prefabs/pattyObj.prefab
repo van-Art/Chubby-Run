@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6172286061059194325
+--- !u!1 &2611065033184497157
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,47 +8,48 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6172286061059194324}
-  - component: {fileID: 6172286061059194321}
-  - component: {fileID: 6172286061059194326}
-  - component: {fileID: 6172286061059194327}
-  m_Layer: 3
-  m_Name: DishDryingRack
-  m_TagString: obs
+  - component: {fileID: 8482909242171480046}
+  - component: {fileID: 4164678474886784402}
+  - component: {fileID: 7665932416667843121}
+  - component: {fileID: 3902308041676279030}
+  - component: {fileID: 6824408227626185346}
+  m_Layer: 0
+  m_Name: pattyObj
+  m_TagString: patty
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 18
+  m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6172286061059194324
+--- !u!4 &8482909242171480046
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6172286061059194325}
-  m_LocalRotation: {x: 0.11729489, y: 0.5617456, z: 0.69146836, w: 0.43881127}
+  m_GameObject: {fileID: 2611065033184497157}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.0000014603138}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 408.17316, y: 408.17303, z: 408.1731}
+  m_LocalScale: {x: 35.9064, y: 35.9064, z: 7.7991986}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -137.63, y: 242.48, z: 268.741}
---- !u!33 &6172286061059194321
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!33 &4164678474886784402
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6172286061059194325}
-  m_Mesh: {fileID: -741811447206247429, guid: dd18a70a19845134eb49c33addae54b6, type: 3}
---- !u!23 &6172286061059194326
+  m_GameObject: {fileID: 2611065033184497157}
+  m_Mesh: {fileID: -2287483877431797496, guid: dfdc0f53b21519e478d6bfb843ba5767, type: 3}
+--- !u!23 &7665932416667843121
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6172286061059194325}
+  m_GameObject: {fileID: 2611065033184497157}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -62,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 0
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6f79899c5b497cf4babfbd328141923c, type: 2}
+  - {fileID: 2100000, guid: 819476175bdfc65448604f52e2ce4c85, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -84,16 +85,30 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &6172286061059194327
+--- !u!65 &3902308041676279030
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6172286061059194325}
+  m_GameObject: {fileID: 2611065033184497157}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.0031200026, y: 0.008344137, z: 0.0043942085}
-  m_Center: {x: 0.0000000016344339, y: -0.000049984075, z: 0.002197102}
+  m_Size: {x: 0.022512164, y: 0.022224383, z: 0.021612925}
+  m_Center: {x: 0.000007867813, y: 0.000042769123, z: 0.000043119766}
+--- !u!114 &6824408227626185346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2611065033184497157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc75b8fa1c26d414590c2e1c628a5aad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotAngel: {x: 0, y: 90, z: 0}
+  speed: 3

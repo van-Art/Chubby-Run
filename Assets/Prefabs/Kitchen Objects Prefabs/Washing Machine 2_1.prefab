@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3468203091269763503}
   - component: {fileID: 3468203091269763500}
   - component: {fileID: 3468203091269763501}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 01_Washing-machine
   m_TagString: obs
   m_Icon: {fileID: 0}
@@ -115,7 +115,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3468203091551500482}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Washing Machine 2_1
   m_TagString: obs
   m_Icon: {fileID: 0}
@@ -153,7 +153,7 @@ GameObject:
   - component: {fileID: 3468203092558296457}
   - component: {fileID: 3468203092558296459}
   - component: {fileID: 3468203092558296456}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 01_Hoses
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -237,7 +237,7 @@ GameObject:
   - component: {fileID: 3468203092623202597}
   - component: {fileID: 3468203092623202599}
   - component: {fileID: 3468203092623202596}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 01_Props-group_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -326,7 +326,7 @@ GameObject:
   - component: {fileID: 3468203092753103773}
   - component: {fileID: 3468203092753103775}
   - component: {fileID: 3468203092753103772}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 01_Drum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -410,7 +410,7 @@ GameObject:
   - component: {fileID: 3468203092771877083}
   - component: {fileID: 3468203092771877085}
   - component: {fileID: 3468203092771877082}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 01_Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}

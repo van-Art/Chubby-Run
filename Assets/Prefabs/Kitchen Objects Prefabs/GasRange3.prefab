@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2936347431568912383}
   - component: {fileID: 2936347431568912376}
   - component: {fileID: 2936347431568912377}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GasRange3
   m_TagString: obs
   m_Icon: {fileID: 0}

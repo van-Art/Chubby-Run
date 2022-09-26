@@ -1690,7 +1690,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 496779334}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 648327020}
+        m_TargetAssemblyTypeName: LevelLoader, Assembly-CSharp
+        m_MethodName: LaodSecondLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &496779334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2230,8 +2242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36507efd2cfaa4e4d96a99829453ff78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Transition: {fileID: 0}
-  transitionTime: 1
+  lvlManagerScript: {fileID: 0}
   MainPage: {fileID: 0}
   SettingsPage: {fileID: 0}
   Shop: {fileID: 0}
@@ -2269,6 +2280,16 @@ MonoBehaviour:
   - {fileID: 923232532}
   - {fileID: 2119976670}
   - {fileID: 1435560074}
+  - {fileID: 682955373}
+  - {fileID: 837953407}
+  - {fileID: 303939865}
+  - {fileID: 1057660235}
+  - {fileID: 521411044}
+  - {fileID: 819690824}
+  - {fileID: 1785436585}
+  - {fileID: 1137787859}
+  - {fileID: 1189564894}
+  - {fileID: 1702737897}
 --- !u!1 &658756163
 GameObject:
   m_ObjectHideFlags: 0

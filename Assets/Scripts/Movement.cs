@@ -41,6 +41,7 @@ public class Movement : MonoBehaviour
 
     void Start()
     {
+        isDone = false;
         rb = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
 
@@ -85,11 +86,40 @@ public class Movement : MonoBehaviour
 
         rb.position = rb.position + movement;
         rb.position = Vector3.Lerp(rb.position, new Vector3(row, rb.position.y, rb.position.z), 10 * Time.deltaTime);
-        Jump();
+
+        if (swipeUp)
+            Jump();
+        
     }
-    void Jump()
+    public void SwipeLeft()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && InJump == true)
+        if (m_side == SIDE.Mid)
+        {
+            row = -xValue;
+            m_side = SIDE.Left;
+        }
+        else if (m_side == SIDE.Right)
+        {
+            row = 0;
+            m_side = SIDE.Mid;
+        }
+    }
+    public void SwipeRight()
+    {
+        if (m_side == SIDE.Mid)
+        {
+            row = xValue;
+            m_side = SIDE.Right;
+        }
+        else if (m_side == SIDE.Left)
+        {
+            row = 0;
+            m_side = SIDE.Mid;
+        }
+    }
+    public void Jump()
+    {
+        if(InJump == true)
         {
             anim.SetBool("jump", true);
             rb.AddForce(Vector3.up * jumpForce);

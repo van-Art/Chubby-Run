@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9061973852348480740}
   - component: {fileID: 9061973852348480739}
   - component: {fileID: 9061973852348480738}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Refrigerator8
   m_TagString: obs
   m_Icon: {fileID: 0}

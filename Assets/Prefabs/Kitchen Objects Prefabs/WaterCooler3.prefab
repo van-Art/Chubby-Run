@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2422627952510477689}
   - component: {fileID: 2422627952510477691}
   - component: {fileID: 2422627952510477688}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: pCube3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 2422627953392134380}
   - component: {fileID: 2422627953392134382}
   - component: {fileID: 2422627953392134383}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: pCube2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,7 +175,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2422627953603995163}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WaterCooler3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -212,7 +212,7 @@ GameObject:
   - component: {fileID: 2422627953766108684}
   - component: {fileID: 2422627953766108685}
   - component: {fileID: 2422627953766108682}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: pCube1
   m_TagString: obs
   m_Icon: {fileID: 0}

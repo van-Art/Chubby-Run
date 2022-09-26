@@ -217,7 +217,7 @@ GameObject:
   - component: {fileID: 4333750}
   - component: {fileID: 4333752}
   - component: {fileID: 4333751}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 02_Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -687,7 +687,7 @@ RectTransform:
   - {fileID: 2006554377}
   - {fileID: 866456042}
   m_Father: {fileID: 847640727}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3104,7 +3104,7 @@ GameObject:
   - component: {fileID: 72920592}
   - component: {fileID: 72920594}
   - component: {fileID: 72920593}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 02_Props-group_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6168,7 +6168,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 130914508}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Washing Machine 4(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6627,7 +6627,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: / 3
+  m_text: / 8
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -6762,7 +6762,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '   / 3
+  m_text: '   / 8
 
 '
   m_isRightToLeft: 0
@@ -7325,7 +7325,7 @@ GameObject:
   - component: {fileID: 160691216}
   - component: {fileID: 160691215}
   - component: {fileID: 160691214}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 01_Washing-machine
   m_TagString: obs
   m_Icon: {fileID: 0}
@@ -7567,7 +7567,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 172236202}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WaterCooler4(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8644,7 +8644,7 @@ GameObject:
   - component: {fileID: 191940848}
   - component: {fileID: 191940847}
   - component: {fileID: 191940846}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Oven1(Clone)
   m_TagString: obs
   m_Icon: {fileID: 0}
@@ -8659,7 +8659,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 191940844}
   m_LocalRotation: {x: -0.69355816, y: -0.13775751, z: -0.13775752, w: 0.69355816}
-  m_LocalPosition: {x: -0.64901614, y: -0.82062376, z: -354.93585}
+  m_LocalPosition: {x: -0.64901614, y: -0.82062376, z: -352.07}
   m_LocalScale: {x: 288.38007, y: 288.3802, z: 288.3802}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9793,7 +9793,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '   / 6
+  m_text: '   / 3
 
 '
   m_isRightToLeft: 0
@@ -10955,7 +10955,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2043688125}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: MenuButton
         m_Mode: 1
@@ -11561,7 +11561,7 @@ GameObject:
   - component: {fileID: 269795161}
   - component: {fileID: 269795160}
   - component: {fileID: 269795159}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 02_Washing-machine
   m_TagString: obs
   m_Icon: {fileID: 0}
@@ -12251,7 +12251,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 283010121}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Washing Machine 4(Clone) (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12376,7 +12376,7 @@ GameObject:
   - component: {fileID: 288567945}
   - component: {fileID: 288567947}
   - component: {fileID: 288567946}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 02_Props-group_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12702,7 +12702,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: / 6
+  m_text: / 3
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -14549,7 +14549,7 @@ GameObject:
   - component: {fileID: 333700297}
   - component: {fileID: 333700299}
   - component: {fileID: 333700298}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: pCube3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14633,7 +14633,7 @@ GameObject:
   - component: {fileID: 335362075}
   - component: {fileID: 335362074}
   - component: {fileID: 335362073}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: pCube1
   m_TagString: obs
   m_Icon: {fileID: 0}
@@ -14727,7 +14727,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 337406629}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WaterCooler3(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14909,7 +14909,7 @@ GameObject:
   - component: {fileID: 344197913}
   - component: {fileID: 344197912}
   - component: {fileID: 344197911}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: pCube1
   m_TagString: obs
   m_Icon: {fileID: 0}
@@ -15420,7 +15420,7 @@ GameObject:
   - component: {fileID: 359974002}
   - component: {fileID: 359974004}
   - component: {fileID: 359974003}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 02_Hoses
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16587,7 +16587,7 @@ GameObject:
   - component: {fileID: 395361553}
   - component: {fileID: 395361555}
   - component: {fileID: 395361554}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 02_Overflow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17161,7 +17161,7 @@ GameObject:
   - component: {fileID: 405228379}
   - component: {fileID: 405228381}
   - component: {fileID: 405228380}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 01_Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17332,89 +17332,6 @@ Transform:
   m_Father: {fileID: 1336753293}
   m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!1 &407664011
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 407664012}
-  - component: {fileID: 407664014}
-  - component: {fileID: 407664013}
-  m_Layer: 0
-  m_Name: pCube2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 18
-  m_IsActive: 1
---- !u!4 &407664012
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 407664011}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0017011937, y: 0.0043446897, z: 0.0032488387}
-  m_LocalScale: {x: 0.039930154, y: 0.041588034, z: 0.09787441}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1757730664}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &407664013
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 407664011}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 0
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: b86eb02243cf8964089b180aa6c1fb84, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &407664014
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 407664011}
-  m_Mesh: {fileID: 5302568919011541938, guid: 4f1ed05ced43cba4792db7d2150a0bef, type: 3}
 --- !u!1 &409338788
 GameObject:
   m_ObjectHideFlags: 0
@@ -18263,7 +18180,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 423532226}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WaterCooler4(Clone) (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18964,7 +18881,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 446185318}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WaterCooler3(Clone) (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23599,7 +23516,7 @@ GameObject:
   - component: {fileID: 535766646}
   - component: {fileID: 535766648}
   - component: {fileID: 535766647}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 02_Hoses
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23684,7 +23601,7 @@ GameObject:
   - component: {fileID: 536537214}
   - component: {fileID: 536537213}
   - component: {fileID: 536537212}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 02_Washing-machine
   m_TagString: obs
   m_Icon: {fileID: 0}
@@ -23835,7 +23752,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: / 1
+  m_text: / 5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -23923,7 +23840,7 @@ GameObject:
   - component: {fileID: 542302877}
   - component: {fileID: 542302879}
   - component: {fileID: 542302878}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: pCube3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24673,7 +24590,7 @@ GameObject:
   - component: {fileID: 557452120}
   - component: {fileID: 557452122}
   - component: {fileID: 557452121}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 02_Rust
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24915,7 +24832,7 @@ GameObject:
   - component: {fileID: 559698684}
   - component: {fileID: 559698686}
   - component: {fileID: 559698685}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 02_Overflow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25292,7 +25209,7 @@ GameObject:
   - component: {fileID: 579401342}
   - component: {fileID: 579401344}
   - component: {fileID: 579401343}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 02_Hoses
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25614,7 +25531,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2043688125}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: PauseGame
         m_Mode: 1
@@ -26001,7 +25918,7 @@ GameObject:
   - component: {fileID: 594587655}
   - component: {fileID: 594587657}
   - component: {fileID: 594587656}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 02_Cloth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26398,7 +26315,7 @@ GameObject:
   - component: {fileID: 604280473}
   - component: {fileID: 604280475}
   - component: {fileID: 604280474}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 02_Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28156,7 +28073,7 @@ GameObject:
   - component: {fileID: 638864602}
   - component: {fileID: 638864601}
   - component: {fileID: 638864600}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 02_Washing-machine
   m_TagString: obs
   m_Icon: {fileID: 0}
@@ -28426,7 +28343,7 @@ GameObject:
   - component: {fileID: 643941292}
   - component: {fileID: 643941294}
   - component: {fileID: 643941293}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 02_Props-group_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28640,7 +28557,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 645487588}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Washing Machine 2(Clone)
   m_TagString: obs
   m_Icon: {fileID: 0}
@@ -31220,7 +31137,7 @@ GameObject:
   - component: {fileID: 689152367}
   - component: {fileID: 689152369}
   - component: {fileID: 689152368}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 02_Cloth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33421,6 +33338,103 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 724139150}
   m_Mesh: {fileID: -6925377561236418556, guid: dd18a70a19845134eb49c33addae54b6, type: 3}
+--- !u!1 &724173099
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 724173100}
+  - component: {fileID: 724173103}
+  - component: {fileID: 724173102}
+  - component: {fileID: 724173101}
+  m_Layer: 3
+  m_Name: Oven1(Clone) (1)
+  m_TagString: obs
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 18
+  m_IsActive: 1
+--- !u!4 &724173100
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724173099}
+  m_LocalRotation: {x: -0.5505963, y: -0.44367054, z: 0.19957012, w: 0.6783598}
+  m_LocalPosition: {x: 0.034944296, y: -1.62, z: -399.18585}
+  m_LocalScale: {x: 288.38007, y: 288.3802, z: 288.3802}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1310571725}
+  m_RootOrder: 36
+  m_LocalEulerAnglesHint: {x: -145.255, y: 90, z: -112.468}
+--- !u!65 &724173101
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724173099}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.007999999, y: 0.0067117466, z: 0.006169598}
+  m_Center: {x: -2.3282996e-10, y: -0.0006440663, z: 0.0030152013}
+--- !u!23 &724173102
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724173099}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 0
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 6f79899c5b497cf4babfbd328141923c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &724173103
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724173099}
+  m_Mesh: {fileID: 3205702657871549766, guid: dd18a70a19845134eb49c33addae54b6, type: 3}
 --- !u!1 &725318653
 GameObject:
   m_ObjectHideFlags: 0
@@ -34542,7 +34556,7 @@ GameObject:
   - component: {fileID: 752182910}
   - component: {fileID: 752182909}
   - component: {fileID: 752182908}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Refrigerator2(Clone)
   m_TagString: obs
   m_Icon: {fileID: 0}
@@ -34925,7 +34939,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: / 6
+  m_text: / 3
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -35456,7 +35470,7 @@ GameObject:
   - component: {fileID: 767963278}
   - component: {fileID: 767963280}
   - component: {fileID: 767963279}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: pCube3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36112,7 +36126,7 @@ GameObject:
   - component: {fileID: 776978812}
   - component: {fileID: 776978811}
   - component: {fileID: 776978810}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Refrigerator7(Clone)
   m_TagString: obs
   m_Icon: {fileID: 0}
@@ -37716,7 +37730,7 @@ GameObject:
   - component: {fileID: 810373124}
   - component: {fileID: 810373126}
   - component: {fileID: 810373125}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: pCube3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40210,8 +40224,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1360024812}
-  - {fileID: 1834667865}
   - {fileID: 16270992}
+  - {fileID: 1834667865}
   - {fileID: 1624734655}
   - {fileID: 582640815}
   - {fileID: 1896840342}
@@ -41083,7 +41097,7 @@ GameObject:
   - component: {fileID: 862475571}
   - component: {fileID: 862475573}
   - component: {fileID: 862475572}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 02_Overflow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41252,7 +41266,7 @@ GameObject:
   - component: {fileID: 864997030}
   - component: {fileID: 864997029}
   - component: {fileID: 864997028}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 02_Washing-machine
   m_TagString: obs
   m_Icon: {fileID: 0}
@@ -42433,7 +42447,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '   / 5'
+  m_text: '   / 2'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -44520,7 +44534,7 @@ GameObject:
   - component: {fileID: 922684425}
   - component: {fileID: 922684427}
   - component: {fileID: 922684426}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 02_Drum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45807,7 +45821,7 @@ GameObject:
   - component: {fileID: 949754606}
   - component: {fileID: 949754608}
   - component: {fileID: 949754607}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 02_Drum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47967,7 +47981,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: / 5
+  m_text: / 2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -50035,7 +50049,7 @@ GameObject:
   - component: {fileID: 1043118033}
   - component: {fileID: 1043118032}
   - component: {fileID: 1043118031}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: pCube1
   m_TagString: obs
   m_Icon: {fileID: 0}
@@ -50592,7 +50606,7 @@ GameObject:
   - component: {fileID: 1053120967}
   - component: {fileID: 1053120966}
   - component: {fileID: 1053120965}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: pCube1
   m_TagString: obs
   m_Icon: {fileID: 0}
@@ -50688,7 +50702,7 @@ GameObject:
   - component: {fileID: 1053876014}
   - component: {fileID: 1053876016}
   - component: {fileID: 1053876015}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 02_Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51430,7 +51444,7 @@ GameObject:
   - component: {fileID: 1071388332}
   - component: {fileID: 1071388331}
   - component: {fileID: 1071388330}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Refrigerator(Clone)
   m_TagString: obs
   m_Icon: {fileID: 0}
@@ -54311,7 +54325,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: / 5
+  m_text: / 2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -54482,7 +54496,7 @@ GameObject:
   - component: {fileID: 1137340877}
   - component: {fileID: 1137340879}
   - component: {fileID: 1137340878}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 02_Cloth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57885,7 +57899,7 @@ GameObject:
   - component: {fileID: 1208841534}
   - component: {fileID: 1208841533}
   - component: {fileID: 1208841532}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Refrigerator6(Clone)
   m_TagString: obs
   m_Icon: {fileID: 0}
@@ -58049,7 +58063,7 @@ GameObject:
   - component: {fileID: 1212738666}
   - component: {fileID: 1212738668}
   - component: {fileID: 1212738667}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 02_Drum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58214,7 +58228,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1216845001}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Washing Machine 4(Clone) (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58768,7 +58782,7 @@ GameObject:
   - component: {fileID: 1225201103}
   - component: {fileID: 1225201105}
   - component: {fileID: 1225201104}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 02_Props-group_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58937,7 +58951,7 @@ GameObject:
   - component: {fileID: 1226623783}
   - component: {fileID: 1226623785}
   - component: {fileID: 1226623784}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 01_Hoses
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59279,7 +59293,7 @@ GameObject:
   - component: {fileID: 1234977472}
   - component: {fileID: 1234977471}
   - component: {fileID: 1234977470}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 02_Washing-machine
   m_TagString: obs
   m_Icon: {fileID: 0}
@@ -59837,7 +59851,7 @@ GameObject:
   - component: {fileID: 1248409547}
   - component: {fileID: 1248409549}
   - component: {fileID: 1248409548}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 02_Rust
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60479,7 +60493,7 @@ GameObject:
   - component: {fileID: 1269972382}
   - component: {fileID: 1269972384}
   - component: {fileID: 1269972383}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: pCube2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61239,7 +61253,7 @@ GameObject:
   - component: {fileID: 1291580051}
   - component: {fileID: 1291580050}
   - component: {fileID: 1291580049}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Refrigerator(Clone) (1)
   m_TagString: obs
   m_Icon: {fileID: 0}
@@ -62571,7 +62585,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: / 3
+  m_text: / 8
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -62740,7 +62754,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1308195414}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Washing Machine 4(Clone) (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62918,6 +62932,7 @@ Transform:
   - {fileID: 1646352146}
   - {fileID: 645487588}
   - {fileID: 1455725222}
+  - {fileID: 724173100}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -63298,7 +63313,7 @@ GameObject:
   - component: {fileID: 1319146941}
   - component: {fileID: 1319146943}
   - component: {fileID: 1319146942}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 02_Rust
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64003,89 +64018,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1345722288}
   m_Mesh: {fileID: -5631082469621323806, guid: dd18a70a19845134eb49c33addae54b6, type: 3}
---- !u!1 &1346236110
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1346236111}
-  - component: {fileID: 1346236113}
-  - component: {fileID: 1346236112}
-  m_Layer: 0
-  m_Name: pCube3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 18
-  m_IsActive: 1
---- !u!4 &1346236111
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1346236110}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0018380594, y: 0.0043446897, z: 0.0032488387}
-  m_LocalScale: {x: 0.039930154, y: 0.041588034, z: 0.09787441}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1757730664}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &1346236112
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1346236110}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 0
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: b86eb02243cf8964089b180aa6c1fb84, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1346236113
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1346236110}
-  m_Mesh: {fileID: 3369316746193770658, guid: 4f1ed05ced43cba4792db7d2150a0bef, type: 3}
 --- !u!1 &1355152134
 GameObject:
   m_ObjectHideFlags: 0
@@ -64098,7 +64030,7 @@ GameObject:
   - component: {fileID: 1355152138}
   - component: {fileID: 1355152137}
   - component: {fileID: 1355152136}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GasRange3(Clone)
   m_TagString: obs
   m_Icon: {fileID: 0}
@@ -64661,7 +64593,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1371449575}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WaterCooler4(Clone) (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -66149,7 +66081,7 @@ GameObject:
   - component: {fileID: 1397100765}
   - component: {fileID: 1397100767}
   - component: {fileID: 1397100766}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 02_Props-group_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -66238,7 +66170,7 @@ GameObject:
   - component: {fileID: 1397279884}
   - component: {fileID: 1397279883}
   - component: {fileID: 1397279882}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: pCube1
   m_TagString: obs
   m_Icon: {fileID: 0}
@@ -68110,7 +68042,7 @@ GameObject:
   - component: {fileID: 1437894384}
   - component: {fileID: 1437894386}
   - component: {fileID: 1437894385}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 02_Cloth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68789,6 +68721,7 @@ Transform:
   - {fileID: 1921010342}
   - {fileID: 629214365}
   - {fileID: 1041994961}
+  - {fileID: 1929344776}
   m_Father: {fileID: 1146148234}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -68803,7 +68736,7 @@ GameObject:
   - component: {fileID: 1448999881}
   - component: {fileID: 1448999883}
   - component: {fileID: 1448999882}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: pCube2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69105,7 +69038,7 @@ GameObject:
   - component: {fileID: 1455725225}
   - component: {fileID: 1455725224}
   - component: {fileID: 1455725223}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Refrigerator8(Clone) (3)
   m_TagString: obs
   m_Icon: {fileID: 0}
@@ -70371,7 +70304,7 @@ GameObject:
   - component: {fileID: 1471156019}
   - component: {fileID: 1471156018}
   - component: {fileID: 1471156017}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Refrigerator(Clone) (3)
   m_TagString: obs
   m_Icon: {fileID: 0}
@@ -72294,7 +72227,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2043688125}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: Resume
         m_Mode: 1
@@ -73371,7 +73304,7 @@ GameObject:
   - component: {fileID: 1546632411}
   - component: {fileID: 1546632410}
   - component: {fileID: 1546632409}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Refrigerator(Clone) (2)
   m_TagString: obs
   m_Icon: {fileID: 0}
@@ -73830,7 +73763,7 @@ GameObject:
   - component: {fileID: 1555446662}
   - component: {fileID: 1555446664}
   - component: {fileID: 1555446663}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: pCube3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75065,7 +74998,7 @@ GameObject:
   - component: {fileID: 1578825222}
   - component: {fileID: 1578825221}
   - component: {fileID: 1578825220}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: pCube1
   m_TagString: obs
   m_Icon: {fileID: 0}
@@ -76183,7 +76116,7 @@ GameObject:
   - component: {fileID: 1596107639}
   - component: {fileID: 1596107641}
   - component: {fileID: 1596107640}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 02_Props-group_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76271,7 +76204,7 @@ GameObject:
   - component: {fileID: 1597220703}
   - component: {fileID: 1597220705}
   - component: {fileID: 1597220704}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 02_Overflow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76822,7 +76755,7 @@ GameObject:
   - component: {fileID: 1605967269}
   - component: {fileID: 1605967271}
   - component: {fileID: 1605967270}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 02_Overflow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77365,7 +77298,7 @@ GameObject:
   - component: {fileID: 1620836945}
   - component: {fileID: 1620836947}
   - component: {fileID: 1620836946}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 02_Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77449,7 +77382,7 @@ GameObject:
   - component: {fileID: 1622789077}
   - component: {fileID: 1622789079}
   - component: {fileID: 1622789078}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 02_Props-group_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78184,7 +78117,7 @@ GameObject:
   - component: {fileID: 1631318569}
   - component: {fileID: 1631318571}
   - component: {fileID: 1631318570}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 02_Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79231,7 +79164,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1646352146}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Washing Machine 4(Clone) (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79605,7 +79538,7 @@ GameObject:
   - component: {fileID: 1667308790}
   - component: {fileID: 1667308792}
   - component: {fileID: 1667308791}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 02_Drum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81355,7 +81288,7 @@ GameObject:
   - component: {fileID: 1703676001}
   - component: {fileID: 1703676003}
   - component: {fileID: 1703676002}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: pCube2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81853,7 +81786,7 @@ GameObject:
   - component: {fileID: 1716177127}
   - component: {fileID: 1716177126}
   - component: {fileID: 1716177125}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GasRange3(Clone) (1)
   m_TagString: obs
   m_Icon: {fileID: 0}
@@ -82032,7 +81965,7 @@ GameObject:
   - component: {fileID: 1719757831}
   - component: {fileID: 1719757833}
   - component: {fileID: 1719757832}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 02_Hoses
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82241,7 +82174,7 @@ GameObject:
   - component: {fileID: 1726005754}
   - component: {fileID: 1726005756}
   - component: {fileID: 1726005755}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 02_Hoses
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84129,7 +84062,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1757730664}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WaterCooler1(Clone)
   m_TagString: obs
   m_Icon: {fileID: 0}
@@ -84149,8 +84082,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2069081839}
-  - {fileID: 407664012}
-  - {fileID: 1346236111}
   m_Father: {fileID: 1310571725}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
@@ -85281,7 +85212,7 @@ GameObject:
   - component: {fileID: 1791288598}
   - component: {fileID: 1791288600}
   - component: {fileID: 1791288599}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 01_Drum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85811,7 +85742,7 @@ GameObject:
   - component: {fileID: 1809383029}
   - component: {fileID: 1809383031}
   - component: {fileID: 1809383030}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 02_Rust
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86527,7 +86458,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2043688125}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: RetryGame
         m_Mode: 1
@@ -87379,7 +87310,7 @@ RectTransform:
   m_Children:
   - {fileID: 1710599489}
   m_Father: {fileID: 847640727}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -88747,7 +88678,7 @@ GameObject:
   - component: {fileID: 1856448230}
   - component: {fileID: 1856448232}
   - component: {fileID: 1856448231}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: pCube2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89079,7 +89010,7 @@ GameObject:
   - component: {fileID: 1857550628}
   - component: {fileID: 1857550630}
   - component: {fileID: 1857550629}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 02_Drum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89495,7 +89426,7 @@ GameObject:
   - component: {fileID: 1865404764}
   - component: {fileID: 1865404766}
   - component: {fileID: 1865404765}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 01_Props-group_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89784,7 +89715,7 @@ GameObject:
   - component: {fileID: 1875399100}
   - component: {fileID: 1875399102}
   - component: {fileID: 1875399101}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 02_Props-group_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91968,7 +91899,7 @@ GameObject:
   - component: {fileID: 1920359279}
   - component: {fileID: 1920359281}
   - component: {fileID: 1920359280}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 02_Cloth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92302,7 +92233,7 @@ GameObject:
   - component: {fileID: 1924251278}
   - component: {fileID: 1924251280}
   - component: {fileID: 1924251279}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: pCube2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92535,6 +92466,103 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1926037644}
   m_CullTransparentMesh: 1
+--- !u!1 &1929344775
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1929344776}
+  - component: {fileID: 1929344779}
+  - component: {fileID: 1929344778}
+  - component: {fileID: 1929344777}
+  m_Layer: 0
+  m_Name: Toaster (2)
+  m_TagString: obs
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &1929344776
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929344775}
+  m_LocalRotation: {x: 0.11128792, y: 0.7975592, z: 0.33394614, w: 0.489892}
+  m_LocalPosition: {x: 1.64, y: -1.8, z: 34.19339}
+  m_LocalScale: {x: 715.51416, y: 715.51416, z: 715.51416}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1447366621}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: -154.935, y: -70.862, z: 213.861}
+--- !u!65 &1929344777
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929344775}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.003454891, y: 0.005318986, z: 0.0035600006}
+  m_Center: {x: -0.000047444722, y: 0.0011794916, z: 0.0017799998}
+--- !u!23 &1929344778
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929344775}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 0
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 6f79899c5b497cf4babfbd328141923c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1929344779
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929344775}
+  m_Mesh: {fileID: -6925377561236418556, guid: dd18a70a19845134eb49c33addae54b6, type: 3}
 --- !u!1 &1930216558
 GameObject:
   m_ObjectHideFlags: 0
@@ -92790,7 +92818,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '   / 1'
+  m_text: '   / 5'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -93760,6 +93788,30 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8327924752055908630, guid: 448d9f6b465ddaf448b5005e07f0dca7, type: 3}
   m_PrefabInstance: {fileID: 1945134767}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1945134769 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8327924752055908650, guid: 448d9f6b465ddaf448b5005e07f0dca7, type: 3}
+  m_PrefabInstance: {fileID: 1945134767}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945134768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05acab5af442096409ea344a5581a272, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1945134770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945134768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1164a009b730c474e8f30a4ac894f0b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveScript: {fileID: 1945134769}
 --- !u!1 &1945276760
 GameObject:
   m_ObjectHideFlags: 0
@@ -94265,7 +94317,7 @@ GameObject:
   - component: {fileID: 1959485437}
   - component: {fileID: 1959485436}
   - component: {fileID: 1959485435}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Refrigerator8(Clone)
   m_TagString: obs
   m_Icon: {fileID: 0}
@@ -95386,7 +95438,7 @@ GameObject:
   - component: {fileID: 1980990790}
   - component: {fileID: 1980990789}
   - component: {fileID: 1980990788}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Refrigerator8(Clone) (1)
   m_TagString: obs
   m_Icon: {fileID: 0}
@@ -95606,7 +95658,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1984101882}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WaterCooler3(Clone) (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96141,7 +96193,7 @@ GameObject:
   - component: {fileID: 1998542244}
   - component: {fileID: 1998542243}
   - component: {fileID: 1998542242}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GasRange3(Clone) (2)
   m_TagString: obs
   m_Icon: {fileID: 0}
@@ -98592,6 +98644,22 @@ MonoBehaviour:
   onionScore: 0
   cheeseScore: 0
   cucumberScore: 0
+  PattyCollectableText: {fileID: 2030344050}
+  TomatoCollectableText: {fileID: 1590335146}
+  MorolCollectableText: {fileID: 1428683314}
+  OnionCollectableText: {fileID: 248148534}
+  PattyText: {fileID: 1017936304}
+  TomatoText: {fileID: 48459752}
+  MorolText: {fileID: 554148771}
+  OnionText: {fileID: 1985582222}
+  lettuceText: {fileID: 1248369420}
+  oniText: {fileID: 1406782975}
+  pattyText: {fileID: 1412779840}
+  tomatText: {fileID: 1207659524}
+  overLettuceText: {fileID: 1945276762}
+  overOniText: {fileID: 1902214157}
+  overPattyText: {fileID: 1450785061}
+  overTomatText: {fileID: 1441677251}
   GameIsPaused: 0
 --- !u!114 &2043688126
 MonoBehaviour:
@@ -99747,7 +99815,7 @@ GameObject:
   - component: {fileID: 2064837900}
   - component: {fileID: 2064837902}
   - component: {fileID: 2064837901}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: pCube3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100176,7 +100244,7 @@ GameObject:
   - component: {fileID: 2073583390}
   - component: {fileID: 2073583392}
   - component: {fileID: 2073583391}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 02_Rust
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100767,7 +100835,7 @@ GameObject:
   - component: {fileID: 2083825992}
   - component: {fileID: 2083825994}
   - component: {fileID: 2083825993}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 02_Props-group_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101635,7 +101703,7 @@ GameObject:
   - component: {fileID: 2102554701}
   - component: {fileID: 2102554703}
   - component: {fileID: 2102554702}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: pCube2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101776,7 +101844,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 24.740326, y: 6.80003}
+  m_AnchoredPosition: {x: 21.9, y: 6.80003}
   m_SizeDelta: {x: 53.61953, y: 34.57226}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2104097588
@@ -101799,7 +101867,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: / 1
+  m_text: / 5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
