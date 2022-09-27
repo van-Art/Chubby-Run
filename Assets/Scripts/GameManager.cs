@@ -67,6 +67,7 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
+        Application.targetFrameRate = 120;
         SpwObjs.enabled = GameObject.Find("SpawnObjects").GetComponent<SpawnObs>();
         SpwObjs.enabled = false;
 
