@@ -89,7 +89,6 @@ public class SwipeManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        arrows();
         Swipe();
     }
     public static bool IsPointerOverUIObject()

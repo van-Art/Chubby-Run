@@ -10,12 +10,10 @@ public class LevelManager : MonoBehaviour
 
     public Button[] levelButtons;
 
-    void Awake()
-    {
-        lvlInstance = this;    
-    }
     void Start()
     {
+        lvlInstance = this;
+
         levelsUnlocked = PlayerPrefs.GetInt("levelsUnlocked", 1);
 
         for(int i = 0; i < levelButtons.Length; i++)

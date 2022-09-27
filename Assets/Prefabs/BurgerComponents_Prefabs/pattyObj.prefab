@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6824408227626185346}
   m_Layer: 0
   m_Name: pattyObj
-  m_TagString: patty
+  m_TagString: pattyObj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93,7 +93,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2611065033184497157}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.022512164, y: 0.022224383, z: 0.021612925}

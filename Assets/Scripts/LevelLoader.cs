@@ -28,7 +28,13 @@ public class LevelLoader : MonoBehaviour
     }
     public void LaodSecondLevel()
     {
-        SceneManager.LoadScene("Level2");
+        //SceneManager.LoadScene("Level2");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+    }
+    public void LaodThirdLevel()
+    {
+        //SceneManager.LoadScene("Level2");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
     }
     public void ShopButton()
     {

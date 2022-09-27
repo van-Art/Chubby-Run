@@ -3889,6 +3889,7 @@ GameObject:
   - component: {fileID: 1605458908554065904}
   - component: {fileID: 8327924752055908651}
   - component: {fileID: 8327924752055908650}
+  - component: {fileID: 4189039600119213064}
   m_Layer: 10
   m_Name: Ty
   m_TagString: Player
@@ -3998,6 +3999,8 @@ MonoBehaviour:
   InJump: 0
   InRoll: 0
   isTaken: 0
+  isTakenCheese: 0
+  isTakenCucumber: 0
   isTakenTomato: 0
   isTakenMorol: 0
   isTakeOnion: 0
@@ -4007,6 +4010,19 @@ MonoBehaviour:
   speed: 10
   jumpForce: 800
   xValue: 2.5
+--- !u!114 &4189039600119213064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8327924752055908630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1164a009b730c474e8f30a4ac894f0b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveScript: {fileID: 8327924752055908650}
 --- !u!1 &8352767608351748568
 GameObject:
   m_ObjectHideFlags: 0

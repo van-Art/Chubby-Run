@@ -21,7 +21,8 @@ public class Movement : MonoBehaviour
     public bool swipeUp;
     public bool swipeDown;
     public bool InJump;
-    public bool InRoll;
+    //public bool InRoll;
+    public bool isComponent;
     public bool isTaken;
     public bool isTakenCheese;
     public bool isTakenCucumber;
@@ -41,7 +42,17 @@ public class Movement : MonoBehaviour
 
     void Start()
     {
+        isComponent = false;
         isDone = false;
+        isDead = false;
+        isTaken = false;
+        isTakenCheese = false;
+        isTakenCucumber = false;
+        isTakenTomato = false;
+        isTakenMorol = false;
+        isTakeOnion = false;
+        isFinished = false;
+
         rb = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
 
@@ -138,40 +149,64 @@ public class Movement : MonoBehaviour
         {
             isDead = true;
             if (stackParent.childCount > 5)
+            {
                 TakeDamage(5);
-            else
+
+            }
+            else if(isDead == true)
             {
                 Destroy(gameObject);
-                GameManager.instance.GameOver_Panel.SetActive(true);
-                GameManager.instance.CollectableImg.SetActive(false);
-                Destroy(GameManager.instance.pauseButton);
-                Destroy(GameManager.instance.resumeButton);
+                GameOver();
             }
             col.gameObject.GetComponent<Collider>().isTrigger = true;
         }
         if (col.gameObject.tag == "patty")
         {
             isTaken = true;
+            isComponent = true;
 
             col.transform.parent = stackParent;
-            col.transform.localScale = new Vector3(24, 24, 7.3f);
+            col.transform.localScale = new Vector3(24, 24, 4f);
             col.transform.GetChild(0).gameObject.SetActive(false);
             col.gameObject.GetComponent<Component_Movement>().enabled = false;
             col.gameObject.GetComponent<CoinRotate>().enabled = false;
             col.gameObject.GetComponent<BoxCollider>().enabled = false;
             Destroy(col.gameObject.GetComponent<Rigidbody>());
-            GameManager.instance.addComponentCount();
+            FindObjectOfType<UIGameManager>().addPattyCount();
         }
-        if(col.gameObject.tag == "exit")
+        if(col.gameObject.tag == "exit" && isComponent)
         {
             isDone = true;
-            //SceneManager.LoadScene("Level_Selector");
+            FindObjectOfType<UIGameManager>().WinPanelText();
+
             GameManager.instance.Win_Panel.SetActive(true);
             GameManager.instance.CollectableImg.SetActive(false);
+
             Destroy(GameManager.instance.pauseButton);
             Destroy(GameManager.instance.resumeButton);
             Time.timeScale = 0;
         }
+        else if(col.gameObject.tag == "exit" && !isComponent)
+        {
+            FindObjectOfType<UIGameManager>().OverPanelText();
+            Destroy(gameObject);
+
+            GameManager.instance.GameOver_Panel.SetActive(true);
+            GameManager.instance.CollectableImg.SetActive(false);
+
+            Destroy(GameManager.instance.pauseButton);
+            Destroy(GameManager.instance.resumeButton);
+        }
+    }
+    void GameOver()
+    {
+        FindObjectOfType<UIGameManager>().OverPanelText();
+        
+        GameManager.instance.GameOver_Panel.SetActive(true);
+        GameManager.instance.CollectableImg.SetActive(false);
+
+        Destroy(GameManager.instance.pauseButton);
+        Destroy(GameManager.instance.resumeButton);
     }
     void TakeDamage(int value)
     {
@@ -179,27 +214,31 @@ public class Movement : MonoBehaviour
         {
             if(stackParent.GetChild(0).gameObject.tag == "lettuce")
             {
-                GameManager.instance.morolScore--;
+                FindObjectOfType<UIGameManager>().morolScore--;
             }
             if (stackParent.GetChild(0).gameObject.tag == "onion")
             {
-                GameManager.instance.onionScore--;
+                FindObjectOfType<UIGameManager>().onionScore--;
             }
             if (stackParent.GetChild(0).gameObject.tag == "tomato")
             {
-                GameManager.instance.tomatoScore--;
+                FindObjectOfType<UIGameManager>().tomatoScore--;
             }
             if (stackParent.GetChild(0).gameObject.tag == "patty")
             {
-                GameManager.instance.pattScore--;
+                FindObjectOfType<UIGameManager>().pattScore--;
             }
-            if(stackParent.GetChild(0).gameObject.tag == "cheese")
+            if (stackParent.GetChild(0).gameObject.tag == "pattyObj")
             {
-                GameManager.instance.cheeseScore--;
+                FindObjectOfType<UIGameManager>().pattScore--;
+            }
+            if (stackParent.GetChild(0).gameObject.tag == "cheese")
+            {
+                FindObjectOfType<UIGameManager>().cheeseScore--;
             }
             if(stackParent.GetChild(0).gameObject.tag == "cucumber")
             {
-                GameManager.instance.cucumberScore--;
+                FindObjectOfType<UIGameManager>().cucumberScore--;
             }
             stackParent.GetChild(0).parent = null;
         }
@@ -210,6 +249,15 @@ public class Movement : MonoBehaviour
     //}
     void OnTriggerEnter(Collider col)
     {
+        if(col.gameObject.tag == "pattyObj")
+        {
+            isTaken = true;
+            col.transform.parent = stackParent;
+            col.transform.localScale = new Vector3(24, 24, 4f);
+            col.gameObject.GetComponent<CoinRotate>().enabled = false;
+            col.gameObject.GetComponent<BoxCollider>().enabled = false;
+            FindObjectOfType<UIGameManager>().addPattyCount();
+        }
         if (col.gameObject.tag == "lettuce")
         {
             isTakenMorol = true;
@@ -217,7 +265,7 @@ public class Movement : MonoBehaviour
             col.transform.localScale = new Vector3(18, 18, 6);
             col.GetComponent<CoinRotate>().enabled = false;
             col.GetComponent<BoxCollider>().enabled = false;
-            GameManager.instance.addLettuceCount();
+            FindObjectOfType<UIGameManager>().addLettuceCount();
         }
         if(col.gameObject.tag == "onion")
         {
@@ -226,7 +274,7 @@ public class Movement : MonoBehaviour
             col.transform.localScale = new Vector3(26, 26, 2.7f);
             col.GetComponent<BoxCollider>().enabled = false;
             col.GetComponent<CoinRotate>().enabled = false;
-            GameManager.instance.addOnionCount();
+            FindObjectOfType<UIGameManager>().addOnionCount();
         }
         if (col.gameObject.tag == "tomato")
         {
@@ -236,7 +284,7 @@ public class Movement : MonoBehaviour
             col.transform.Rotate(0, 0, 0);
             col.GetComponent<BoxCollider>().enabled = false;
             col.GetComponent<CoinRotate>().enabled = false;
-            GameManager.instance.addTomatoCount();
+            FindObjectOfType<UIGameManager>().addTomatoCount();
         }
         if(col.gameObject.tag == "cheese")
         {
@@ -245,7 +293,7 @@ public class Movement : MonoBehaviour
             col.transform.localScale = new Vector3(.5f, .5f, .5f);
             col.GetComponent<Collider>().enabled = false;
             col.GetComponent<CoinRotate>().enabled = false;
-            //GameManager.instance.addCheeseCount();
+            //FindObjectOfType<UIGameManager>().addCheeseCount();
         }
         if(col.gameObject.tag == "cucumber")
         {
@@ -255,7 +303,7 @@ public class Movement : MonoBehaviour
             col.transform.Rotate(0, 0, 0);
             col.GetComponent<BoxCollider>().enabled = false;
             col.GetComponent<CoinRotate>().enabled = false;
-            //GameManager.instance.addCucumberCount();
+            //FindObjectOfType<UIGameManager>().addCucumberCount();
         }
     }
 }

@@ -22,6 +22,12 @@ TagManager:
   - patty
   - tomato
   - cucumber
+  - pattyObj
+  - tomatoObj
+  - lettuceObj
+  - onionObj
+  - cheeseObj
+  - cucumberObj
   layers:
   - Default
   - TransparentFX

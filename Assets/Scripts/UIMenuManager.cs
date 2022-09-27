@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UIMenuManager : MonoBehaviour
+public class UIManager : MonoBehaviour
 {
     public GameObject MusicOn;
     public GameObject MusicOff;
