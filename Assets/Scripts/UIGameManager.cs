@@ -41,6 +41,7 @@ public class UIGameManager : MonoBehaviour
     [SerializeField] private TMP_Text overOniText;
     [SerializeField] private TMP_Text overCheeseText;
     [SerializeField] private TMP_Text overCucumberText;
+
     void Start()
     {
         PattyText.text = pattScore.ToString();
@@ -56,6 +57,13 @@ public class UIGameManager : MonoBehaviour
         OnionCollectableText.text = onionScore.ToString();
         CheeseCollectableText.text = cheeseScore.ToString();
         CucumberCollectableText.text = cucumberScore.ToString();
+
+        overPattyText.text = pattScore.ToString();
+        overLettuceText.text = morolScore.ToString();
+        overTomatText.text = tomatoScore.ToString();
+        overOniText.text = onionScore.ToString();
+        overCheeseText.text = cheeseScore.ToString();
+        overCucumberText.text = cucumberScore.ToString();
     }
     void Update()
     {
@@ -73,6 +81,12 @@ public class UIGameManager : MonoBehaviour
         CheeseCollectableText.text = cheeseScore.ToString();
         CucumberCollectableText.text = cucumberScore.ToString();
 
+        overPattyText.text = pattScore.ToString();
+        overLettuceText.text = morolScore.ToString();
+        overTomatText.text = tomatoScore.ToString();
+        overOniText.text = onionScore.ToString();
+        overCheeseText.text = cheeseScore.ToString();
+        overCucumberText.text = cucumberScore.ToString();
         //Invoke("Over", .1f);
     }
     public void WinPanelText()
@@ -104,7 +118,7 @@ public class UIGameManager : MonoBehaviour
     {
         PattyText.text = "" + pattScore;
 
-        if (Movement.mInstance.isTaken == true)
+        if (FindObjectOfType<Movement>().isTaken == true)
         {
             pattScore = pattScore + 1;
 
@@ -116,7 +130,7 @@ public class UIGameManager : MonoBehaviour
     public void addLettuceCount()
     {
         MorolText.text = "" + morolScore;
-        if (Movement.mInstance.isTakenMorol == true)
+        if (FindObjectOfType<Movement>().isTakenMorol == true)
         {
             morolScore += 1;
             MorolText.text = "" + morolScore;
@@ -126,7 +140,7 @@ public class UIGameManager : MonoBehaviour
     public void addOnionCount()
     {
         OnionText.text = "" + onionScore;
-        if (Movement.mInstance.isTakeOnion == true)
+        if (FindObjectOfType<Movement>().isTakeOnion == true)
         {
             onionScore += 1;
             OnionText.text = "" + onionScore;
@@ -136,23 +150,23 @@ public class UIGameManager : MonoBehaviour
     public void addTomatoCount()
     {
         TomatoText.text = "" + tomatoScore;
-        if (Movement.mInstance.isTakenTomato == true)
+        if (FindObjectOfType<Movement>().isTakenTomato == true)
         {
             tomatoScore += 1;
             TomatoText.text = "" + tomatoScore;
             TomatoCollectableText.text = TomatoText.text;
         }
     }
-    //public void addCheeseCount()
-    //{
-    //    CheeseText.text = "" + cheeseScore;
-    //    if (Movement.mInstance.isTakenCheese == true)
-    //    {
-    //        cheeseScore += 1;
-    //        CheeseText.text = "" + cheeseScore;
-    //        CheeseCollectableText.text = CheeseText.text;
-    //    }
-    //}
+    public void addCheeseCount()
+    {
+        CheeseText.text = "" + cheeseScore;
+        if (Movement.mInstance.isTakenCheese == true)
+        {
+            cheeseScore += 1;
+            CheeseText.text = "" + cheeseScore;
+            CheeseCollectableText.text = CheeseText.text;
+        }
+    }
     //public void addCucumberCount()
     //{
     //    CucumberText.text = "" + cucumberScore;

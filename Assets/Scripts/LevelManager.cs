@@ -12,6 +12,8 @@ public class LevelManager : MonoBehaviour
 
     void Start()
     {
+        Application.targetFrameRate = 120;
+
         lvlInstance = this;
 
         levelsUnlocked = PlayerPrefs.GetInt("levelsUnlocked", 1);

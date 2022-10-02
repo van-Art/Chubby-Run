@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2961629837107474364}
   - component: {fileID: 4856674701224410602}
   - component: {fileID: 4890999602604499639}
-  - component: {fileID: 4890999602604499636}
+  - component: {fileID: 4080674726742091454}
   m_Layer: 0
   m_Name: polySurface68
   m_TagString: obs
@@ -84,8 +84,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4890999602604499636
-MeshCollider:
+--- !u!136 &4080674726742091454
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -94,10 +94,10 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 6806359279557329920, guid: b2850b74b5e8d184181fa33ddfbda4a2, type: 3}
+  m_Radius: 7.7895355
+  m_Height: 15.579071
+  m_Direction: 1
+  m_Center: {x: -0.06111252, y: 6.8590083, z: 0.27277923}
 --- !u!1 &9083877004098967938
 GameObject:
   m_ObjectHideFlags: 0

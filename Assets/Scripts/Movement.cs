@@ -43,6 +43,7 @@ public class Movement : MonoBehaviour
     void Start()
     {
         isComponent = false;
+
         isDone = false;
         isDead = false;
         isTaken = false;
@@ -151,7 +152,6 @@ public class Movement : MonoBehaviour
             if (stackParent.childCount > 5)
             {
                 TakeDamage(5);
-
             }
             else if(isDead == true)
             {
@@ -162,8 +162,8 @@ public class Movement : MonoBehaviour
         }
         if (col.gameObject.tag == "patty")
         {
+            SoundManager.instance.soundEffect();
             isTaken = true;
-            isComponent = true;
 
             col.transform.parent = stackParent;
             col.transform.localScale = new Vector3(24, 24, 4f);
@@ -172,9 +172,34 @@ public class Movement : MonoBehaviour
             col.gameObject.GetComponent<CoinRotate>().enabled = false;
             col.gameObject.GetComponent<BoxCollider>().enabled = false;
             Destroy(col.gameObject.GetComponent<Rigidbody>());
+
             FindObjectOfType<UIGameManager>().addPattyCount();
+
+            if(FindObjectOfType<UIGameManager>().pattScore >= 1)
+            {
+                isComponent = true;
+            }
         }
-        if(col.gameObject.tag == "exit" && isComponent)
+        if (col.gameObject.tag == "tomatoObj")
+        {
+            SoundManager.instance.soundEffect();
+            isTakenTomato = true;
+
+            col.transform.parent = stackParent;
+            col.transform.localScale = new Vector3(24, 24, 4f);
+            col.gameObject.GetComponent<Component_Movement>().enabled = false;
+            col.gameObject.GetComponent<CoinRotate>().enabled = false;
+            col.gameObject.GetComponent<BoxCollider>().enabled = false;
+            Destroy(col.gameObject.GetComponent<Rigidbody>());
+
+            FindObjectOfType<UIGameManager>().addTomatoCount();
+
+            if (FindObjectOfType<UIGameManager>().tomatoScore >= 1)
+            {
+                isComponent = true;
+            }
+        }
+        if (col.gameObject.tag == "exit" && isComponent)
         {
             isDone = true;
             FindObjectOfType<UIGameManager>().WinPanelText();
@@ -228,10 +253,6 @@ public class Movement : MonoBehaviour
             {
                 FindObjectOfType<UIGameManager>().pattScore--;
             }
-            if (stackParent.GetChild(0).gameObject.tag == "pattyObj")
-            {
-                FindObjectOfType<UIGameManager>().pattScore--;
-            }
             if (stackParent.GetChild(0).gameObject.tag == "cheese")
             {
                 FindObjectOfType<UIGameManager>().cheeseScore--;
@@ -239,6 +260,14 @@ public class Movement : MonoBehaviour
             if(stackParent.GetChild(0).gameObject.tag == "cucumber")
             {
                 FindObjectOfType<UIGameManager>().cucumberScore--;
+            }
+            if (stackParent.GetChild(0).gameObject.tag == "pattyObj")
+            {
+                FindObjectOfType<UIGameManager>().pattScore--;
+            }
+            if (stackParent.GetChild(0).gameObject.tag == "tomatoObj")
+            {
+                FindObjectOfType<UIGameManager>().tomatoScore--;
             }
             stackParent.GetChild(0).parent = null;
         }
@@ -251,6 +280,7 @@ public class Movement : MonoBehaviour
     {
         if(col.gameObject.tag == "pattyObj")
         {
+            SoundManager.instance.soundEffect();
             isTaken = true;
             col.transform.parent = stackParent;
             col.transform.localScale = new Vector3(24, 24, 4f);
@@ -260,6 +290,7 @@ public class Movement : MonoBehaviour
         }
         if (col.gameObject.tag == "lettuce")
         {
+            SoundManager.instance.soundEffect();
             isTakenMorol = true;
             col.transform.parent = stackParent;
             col.transform.localScale = new Vector3(18, 18, 6);
@@ -269,6 +300,7 @@ public class Movement : MonoBehaviour
         }
         if(col.gameObject.tag == "onion")
         {
+            SoundManager.instance.soundEffect();
             isTakeOnion = true;
             col.transform.parent = stackParent;
             col.transform.localScale = new Vector3(26, 26, 2.7f);
@@ -278,6 +310,7 @@ public class Movement : MonoBehaviour
         }
         if (col.gameObject.tag == "tomato")
         {
+            SoundManager.instance.soundEffect();
             isTakenTomato = true;
             col.transform.parent = stackParent;
             col.transform.localScale = new Vector3(.7f, .7f, .2f);
@@ -288,15 +321,20 @@ public class Movement : MonoBehaviour
         }
         if(col.gameObject.tag == "cheese")
         {
+            SoundManager.instance.soundEffect();
+
             isTakenCheese = true;
             col.transform.parent = stackParent;
             col.transform.localScale = new Vector3(.5f, .5f, .5f);
+            col.transform.Rotate(0, 0, 0);
             col.GetComponent<Collider>().enabled = false;
             col.GetComponent<CoinRotate>().enabled = false;
-            //FindObjectOfType<UIGameManager>().addCheeseCount();
+            FindObjectOfType<UIGameManager>().addCheeseCount();
         }
         if(col.gameObject.tag == "cucumber")
         {
+            SoundManager.instance.soundEffect();
+
             isTakenCucumber = true;
             col.transform.parent = stackParent;
             col.transform.localScale = new Vector3(.7f, .7f, .2f);

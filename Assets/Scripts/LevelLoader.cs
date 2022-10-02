@@ -36,6 +36,16 @@ public class LevelLoader : MonoBehaviour
         //SceneManager.LoadScene("Level2");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
     }
+    public void LaodForthLevel()
+    {
+        //SceneManager.LoadScene("Level2");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 4);
+    }
+    public void LaodFifthLevel()
+    {
+        //SceneManager.LoadScene("Level2");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 5);
+    }
     public void ShopButton()
     {
         MainPage.SetActive(false);
