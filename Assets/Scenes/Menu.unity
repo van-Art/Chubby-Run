@@ -3583,7 +3583,6 @@ MonoBehaviour:
   clips:
   - {fileID: 8300000, guid: b65018e17cb54b54cb8e5de09070134b, type: 3}
   - {fileID: 8300000, guid: b593ddcc9091a42489598dd122b28efc, type: 3}
-  - {fileID: 8300000, guid: 22f7054b5d66bb949ae7976dc76e420b, type: 3}
   - {fileID: 8300000, guid: d685477a8fd9c4043a394c95e6ceb620, type: 3}
 --- !u!82 &1298166999
 AudioSource:

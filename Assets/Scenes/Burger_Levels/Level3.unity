@@ -38619,12 +38619,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1835791971780703033, guid: 448d9f6b465ddaf448b5005e07f0dca7, type: 3}
       propertyPath: itemsize
-      value: 0.03
+      value: 0.025
       objectReference: {fileID: 0}
     - target: {fileID: 8327924752055908630, guid: 448d9f6b465ddaf448b5005e07f0dca7, type: 3}
       propertyPath: m_Name
       value: Ty
       objectReference: {fileID: 0}
+    - target: {fileID: 8327924752055908650, guid: 448d9f6b465ddaf448b5005e07f0dca7, type: 3}
+      propertyPath: effect
+      value: 
+      objectReference: {fileID: 100000, guid: 8dfb05b57dbd9a648802f583881da9dc, type: 3}
     - target: {fileID: 8327924752055908650, guid: 448d9f6b465ddaf448b5005e07f0dca7, type: 3}
       propertyPath: jumpForce
       value: 850

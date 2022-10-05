@@ -15,16 +15,14 @@ public class SoundManager : MonoBehaviour
         if(instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(this.gameObject);        }
+            DontDestroyOnLoad(this.gameObject);        
+        }
         else
         {
             Destroy(gameObject);
         }
         musicSrc.clip = clips[Random.Range(0, clips.Length)];
-        if(musicSrc.isPlaying == false)
-        {
-            musicSrc.clip = clips[Random.Range(0, clips.Length)];
-        }
+        musicSrc.Play();
     }
     public void soundEffect()
     {
