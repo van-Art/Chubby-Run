@@ -3990,6 +3990,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05acab5af442096409ea344a5581a272, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  effect: {fileID: 0}
   stackParent: {fileID: 1835791971780703034}
   m_side: 1
   swipeLeft: 0
@@ -3997,7 +3998,7 @@ MonoBehaviour:
   swipeUp: 0
   swipeDown: 0
   InJump: 0
-  InRoll: 0
+  isComponent: 0
   isTaken: 0
   isTakenCheese: 0
   isTakenCucumber: 0

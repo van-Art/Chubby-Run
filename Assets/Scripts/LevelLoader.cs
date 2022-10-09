@@ -24,10 +24,12 @@ public class LevelLoader : MonoBehaviour
     }
     public void LoadNextLevel()
     {
+        //LoadingCirle.SetActive(true);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
     public void LaodSecondLevel()
     {
+        //LoadingCirle.SetActive(true);
         //SceneManager.LoadScene("Level2");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
     }

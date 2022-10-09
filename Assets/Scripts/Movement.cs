@@ -64,6 +64,14 @@ public class Movement : MonoBehaviour
     void Update()
     {
         MoveControl();
+        if (FindObjectOfType<UIGameManager>().tomatoScore == 0)
+        {
+            isComponent = false;
+        }
+        if (FindObjectOfType<UIGameManager>().pattScore == 0)
+        {
+            isComponent = false;
+        }
     }
     void MoveControl()
     {
@@ -210,6 +218,7 @@ public class Movement : MonoBehaviour
 
             SoundManager.instance.musicSrc.clip = SoundManager.instance.clips[Random.Range(0, SoundManager.instance.clips.Length)];
             SoundManager.instance.musicSrc.Play();
+            //StartCoroutine(FadeTrack(SoundManager.instance.musicSrc));
 
             GameManager.instance.Win_Panel.SetActive(true);
             GameManager.instance.CollectableImg.SetActive(false);
@@ -222,6 +231,10 @@ public class Movement : MonoBehaviour
         {
             FindObjectOfType<UIGameManager>().OverPanelText();
 
+            SoundManager.instance.musicSrc.clip = SoundManager.instance.clips[Random.Range(0, SoundManager.instance.clips.Length)];
+            SoundManager.instance.musicSrc.Play();
+            //StartCoroutine(FadeTrack(SoundManager.instance.musicSrc));
+
             Destroy(gameObject);
 
             GameManager.instance.GameOver_Panel.SetActive(true);
@@ -231,6 +244,23 @@ public class Movement : MonoBehaviour
             Destroy(GameManager.instance.resumeButton);
         }
     }
+    //IEnumerator FadeTrack(AudioSource newSource)
+    //{
+    //    float timeToFade = 1.25f;
+    //    float timeElapes = 0;
+    //    if(SoundManager.instance.isPlayingTrack == true)
+    //    {
+    //        SoundManager.instance.musicSrc.clip = SoundManager.instance.clips[Random.Range(0, SoundManager.instance.clips.Length)];
+    //        SoundManager.instance.musicSrc.Play();
+    //        if(timeElapes < timeToFade)
+    //        {
+    //            SoundManager.instance.musicSrc.volume = Mathf.Lerp(0, 1, timeElapes / timeToFade);
+    //            SoundManager.instance.musicSrc.volume = Mathf.Lerp(1, 0, timeElapes / timeToFade);
+    //            timeElapes += timeToFade;
+    //            yield return null;
+    //        }
+    //    }
+    //}
     void GameOver()
     {
         FindObjectOfType<UIGameManager>().OverPanelText();

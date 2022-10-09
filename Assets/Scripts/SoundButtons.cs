@@ -52,13 +52,11 @@ public class SoundButtons : MonoBehaviour
         {
             muted = true;
             SoundManager.instance.musicSrc.Stop();
-            //AudioListener.pause = true;
         }
         else
         {
             muted = false;
             SoundManager.instance.musicSrc.Play();
-            //AudioListener.pause = false;
         }
         Save();
         UpdateMusicButtonIcon();

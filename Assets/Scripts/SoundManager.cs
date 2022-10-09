@@ -10,6 +10,8 @@ public class SoundManager : MonoBehaviour
     public AudioSource soundSrc;
     public AudioClip[] clips;
 
+    public bool isPlayingTrack;
+
     void Awake()
     {
         if(instance == null)
@@ -21,8 +23,20 @@ public class SoundManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        musicSrc.clip = clips[Random.Range(0, clips.Length)];
-        musicSrc.Play();
+        
+    }
+    void Start()
+    {
+        isPlayingTrack = true;
+        PlayTrack(musicSrc);
+    }
+    void PlayTrack(AudioSource newSource)
+    {
+        if (isPlayingTrack)
+        {
+            musicSrc.clip = clips[Random.Range(0, clips.Length)];
+            musicSrc.Play();
+        }
     }
     public void soundEffect()
     {
