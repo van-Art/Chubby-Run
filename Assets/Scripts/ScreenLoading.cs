@@ -10,14 +10,11 @@ public class ScreenLoading : MonoBehaviour
     public static ScreenLoading instance;
 
     [Header("Loading Scene")]
-    int sceneID;
+    public int sceneID;
     [Header("Other objects")]
     public Image loadingImg;
     public TMP_Text progressText;
-    private void Awake()
-    {
-        instance = this;
-    }
+
     void Start()
     {
         StartCoroutine(AsyncLoad(sceneID));

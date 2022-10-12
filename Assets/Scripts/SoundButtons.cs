@@ -51,12 +51,14 @@ public class SoundButtons : MonoBehaviour
         if(muted == false)
         {
             muted = true;
-            SoundManager.instance.musicSrc.Stop();
+            SoundManager.instance.musicSrc.volume = 0;
+            //SoundManager.instance.musicSrc.Stop();
         }
         else
         {
             muted = false;
-            SoundManager.instance.musicSrc.Play();
+            SoundManager.instance.musicSrc.volume = 100;
+            //SoundManager.instance.musicSrc.Play();
         }
         Save();
         UpdateMusicButtonIcon();
@@ -81,13 +83,13 @@ public class SoundButtons : MonoBehaviour
         if (soundMuted == false)
         {
             soundMuted = true;
-            SoundManager.instance.soundSrc.Stop();
+            SoundManager.instance.soundSrc.volume = 0;
             //AudioListener.pause = true;
         }
         else
         {
             soundMuted = false;
-            SoundManager.instance.soundSrc.Play();
+            SoundManager.instance.soundSrc.volume = 100;
             //AudioListener.pause = false;
         }
         SaveSound();
@@ -109,19 +111,27 @@ public class SoundButtons : MonoBehaviour
 
     void Load()
     {
+        float musicVolume = PlayerPrefs.GetFloat("MusicVolume");
+        SoundManager.instance.musicSrc.volume = musicVolume;
         muted = PlayerPrefs.GetInt("muted") == 1;
     }
     void Save()
     {
+        float musicVolume = SoundManager.instance.musicSrc.volume;
         PlayerPrefs.SetInt("muted", muted ? 1 : 0);
+        PlayerPrefs.SetFloat("MusicVolume", musicVolume);
     }
 
     void LoadSound()
     {
+        float soundVolume = PlayerPrefs.GetFloat("SoundVolume");
+        SoundManager.instance.soundSrc.volume = soundVolume;
         soundMuted = PlayerPrefs.GetInt("soundMuted") == 1;
     }
     void SaveSound()
     {
+        float soundVolume = SoundManager.instance.soundSrc.volume;
         PlayerPrefs.SetInt("soundMuted", soundMuted ? 1 : 0);
+        PlayerPrefs.SetFloat("SoundVolume", soundVolume);
     }
 }

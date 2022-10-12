@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public enum SIDE { Left, Mid, Right}
 public class Movement : MonoBehaviour
 {
+    Scene currentScene;
     public static Movement mInstance;
 
     public GameObject effect;
@@ -42,6 +43,7 @@ public class Movement : MonoBehaviour
 
     float row = 0f;
 
+    string sceneName;
     void Start()
     {
         isComponent = false;
@@ -59,19 +61,32 @@ public class Movement : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
 
+        currentScene = SceneManager.GetActiveScene();
+        sceneName = currentScene.name;
+        
+        int buildIndex = currentScene.buildIndex;
         mInstance = this;
     }
     void Update()
     {
         MoveControl();
-        if (FindObjectOfType<UIGameManager>().tomatoScore == 0)
-        {
-            isComponent = false;
-        }
-        if (FindObjectOfType<UIGameManager>().pattScore == 0)
-        {
-            isComponent = false;
-        }
+        CheckComponent();
+        //if (currentScene.name == "Level1")
+        //{
+        //    if (FindObjectOfType<UIGameManager>().pattScore < 1 && FindObjectOfType<UIGameManager>().tomatoScore < 5 &&
+        //        FindObjectOfType<UIGameManager>().morolScore < 3 && FindObjectOfType<UIGameManager>().onionScore < 6)
+        //    {
+        //        isComponent = false;
+        //    }
+        //}
+        //if (FindObjectOfType<UIGameManager>().tomatoScore == 0)
+        //{
+        //    isComponent = false;
+        //}
+        //if (FindObjectOfType<UIGameManager>().pattScore == 0)
+        //{
+        //    isComponent = false;
+        //}
     }
     void MoveControl()
     {
@@ -185,11 +200,6 @@ public class Movement : MonoBehaviour
             Destroy(col.gameObject.GetComponent<Rigidbody>());
 
             FindObjectOfType<UIGameManager>().addPattyCount();
-
-            if(FindObjectOfType<UIGameManager>().pattScore >= 1)
-            {
-                isComponent = true;
-            }
         }
         if (col.gameObject.tag == "tomatoObj")
         {
@@ -205,11 +215,6 @@ public class Movement : MonoBehaviour
             Destroy(col.gameObject.GetComponent<Rigidbody>());
 
             FindObjectOfType<UIGameManager>().addTomatoCount();
-
-            if (FindObjectOfType<UIGameManager>().tomatoScore >= 1)
-            {
-                isComponent = true;
-            }
         }
         if (col.gameObject.tag == "exit" && isComponent)
         {
@@ -390,6 +395,70 @@ public class Movement : MonoBehaviour
             col.GetComponent<BoxCollider>().enabled = false;
             col.GetComponent<CoinRotate>().enabled = false;
             //FindObjectOfType<UIGameManager>().addCucumberCount();
+        }
+    }
+
+    void CheckComponent()
+    {
+        if(currentScene == SceneManager.GetSceneByName("Level1"))
+        {
+            if((FindObjectOfType<UIGameManager>().pattScore >= 1) && (FindObjectOfType<UIGameManager>().tomatoScore >= 5) && (FindObjectOfType<UIGameManager>().morolScore >= 3) && (FindObjectOfType<UIGameManager>().onionScore >= 6))
+            {
+                isComponent = true;
+                Debug.Log("Component");
+            }
+            else
+            {
+                isComponent = false;
+            }
+        }
+        if (currentScene == SceneManager.GetSceneByName("Level2"))
+        {
+            if ((FindObjectOfType<UIGameManager>().pattScore >= 5) && (FindObjectOfType<UIGameManager>().tomatoScore >= 2) && (FindObjectOfType<UIGameManager>().morolScore >= 8) && (FindObjectOfType<UIGameManager>().onionScore >= 3))
+            {
+                isComponent = true;
+                Debug.Log("Component");
+            }
+            else
+            {
+                isComponent = false;
+            }
+        }
+        if (currentScene == SceneManager.GetSceneByName("Level3"))
+        {
+            if ((FindObjectOfType<UIGameManager>().pattScore >= 2) && (FindObjectOfType<UIGameManager>().tomatoScore >= 4) && (FindObjectOfType<UIGameManager>().morolScore >= 8) && (FindObjectOfType<UIGameManager>().cheeseScore >= 10))
+            {
+                isComponent = true;
+                Debug.Log("Component");
+            }
+            else
+            {
+                isComponent = false;
+            }
+        }
+        if (currentScene == SceneManager.GetSceneByName("Level4"))
+        {
+            if ((FindObjectOfType<UIGameManager>().pattScore >= 2) && (FindObjectOfType<UIGameManager>().onionScore >= 6) && (FindObjectOfType<UIGameManager>().morolScore >= 8) && (FindObjectOfType<UIGameManager>().cheeseScore >= 10))
+            {
+                isComponent = true;
+                Debug.Log("Component");
+            }
+            else
+            {
+                isComponent = false;
+            }
+        }
+        if (currentScene == SceneManager.GetSceneByName("Level5"))
+        {
+            if ((FindObjectOfType<UIGameManager>().tomatoScore >= 5) && (FindObjectOfType<UIGameManager>().onionScore >= 8) && (FindObjectOfType<UIGameManager>().morolScore >= 8) && (FindObjectOfType<UIGameManager>().cheeseScore >= 6))
+            {
+                isComponent = true;
+                Debug.Log("Component");
+            }
+            else
+            {
+                isComponent = false;
+            }
         }
     }
 }
