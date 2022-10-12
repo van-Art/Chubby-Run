@@ -9,3 +9,6 @@ While running you should help a bun collect its components to finish a level.
 It contains three chapters for the game.
 A burger chapter, a hot dog chapter, and a pizza chapter.
 In each chapter, the player must collect components for each hero to complete the chapter.
+
+
+Uploading Chubby Run Gameplay Trailer.mp4…
